@@ -107,7 +107,7 @@ public class Racer {
                 // crash your computer :(
 
                 // you should probably leave it until other components are built :)
-                
+
                 endgame = true;
             }
         }
