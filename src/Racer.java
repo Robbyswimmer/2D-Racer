@@ -59,7 +59,7 @@ public class Racer {
         endgame = false;
 
         try {
-            background = ImageIO.read(new File("Images/test-background.png"));
+            background = ImageIO.read(new File("Images/testTrack.png"));
         } catch (IOException ioe) {
             System.out.println("Find the right image you dingus");
         }
@@ -69,7 +69,7 @@ public class Racer {
 
         setup();
         appFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        appFrame.setSize(501, 585);
+        appFrame.setSize(1320, 937);
 
         JPanel myPanel = new JPanel();
 
