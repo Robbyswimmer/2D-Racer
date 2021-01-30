@@ -49,7 +49,7 @@ public class Racer {
     public static void setup() {
         appFrame = new JFrame("2D Racer");
         xOffset = 0;
-        yOffset = 40;
+        yOffset = 0;
         winWidth = 500;
         winHeight = 500;
         pi = Math.PI;
@@ -58,6 +58,8 @@ public class Racer {
 
         try {
             background = ImageIO.read(new File("Images/testTrack.png"));
+            player = ImageIO.read(new File("Images/BlueCarLarge2.png"));
+
         } catch (IOException ioe) {
             System.out.println("Find the right image you dingus");
         }
@@ -100,6 +102,7 @@ public class Racer {
         public void run() {
             while (!endgame) {
                 drawBackground();
+                drawPlayer();
 
                 // I added this line because if you don't have it,
                 // the program will continually draw backgrounds and
@@ -130,6 +133,12 @@ public class Racer {
         public void actionPerformed(ActionEvent e) {
             endgame = true;
         }
+    }
+
+    private static void drawPlayer() {
+        Graphics g = appFrame.getGraphics();
+        Graphics2D g2d = (Graphics2D) g;
+        g2d.drawImage(player, xOffset + 600, yOffset + 300, null);
     }
 
     private static void drawBackground() {
