@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
@@ -45,12 +44,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Racer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="69" column="16" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+            <state relative-caret-position="435">
+              <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3823#3824#0" expanded="true" />
-                <element signature="e#3860#3861#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,6 +61,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>p1velocity</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -98,11 +100,6 @@
             <path>
               <item name="2D Racer" type="b2602c69:ProjectViewProjectNode" />
               <item name="2D Racer" type="462c0819:PsiDirectoryNode" />
-              <item name="Images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2D Racer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2D Racer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -120,7 +117,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612033404490" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612050161724" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -181,7 +178,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3014000" />
+    <option name="totallyTimeSpent" value="11310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
