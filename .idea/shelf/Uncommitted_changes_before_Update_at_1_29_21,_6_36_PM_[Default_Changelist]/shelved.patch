@@ -1,0 +1,80 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"b6bc35f7-45a8-4a7f-882f-48cf58f6f220\" name=\"Default Changelist\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/.idea/checkstyle-idea.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/2D Racer.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/2D Racer.iml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectFrameBounds\">\n    <option name=\"x\" value=\"82\" />\n    <option name=\"y\" value=\"25\" />\n    <option name=\"width\" value=\"1497\" />\n    <option name=\"height\" value=\"967\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1nlgBZrnu45D6PNOetLT5osWkxH\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\n    <property name=\"com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp\" value=\"1611964700056\" />\n  </component>\n  <component name=\"RunManager\" selected=\"Application.Racer\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\n      <module name=\"2D Racer\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"file://$PROJECT_DIR$\" />\n      <RunnerSettings RunnerId=\"Run\" />\n      <ConfigurationWrapper RunnerId=\"Run\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Racer\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Racer\" />\n      <module name=\"2D Racer\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <list>\n      <item itemvalue=\"Application.Main\" />\n      <item itemvalue=\"Application.Racer\" />\n    </list>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Racer\" />\n        <item itemvalue=\"Application.Main\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"b6bc35f7-45a8-4a7f-882f-48cf58f6f220\" name=\"Default Changelist\" comment=\"\" />\n      <created>1611887720113</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1611887720113</updated>\n      <workItem from=\"1611887729196\" duration=\"6524000\" />\n      <workItem from=\"1611961139126\" duration=\"218000\" />\n      <workItem from=\"1611964482824\" duration=\"211000\" />\n      <workItem from=\"1611969960133\" duration=\"563000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"2\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 0e4b6c211b4d8569eac18915804d2fc13aa6f399)
++++ .idea/workspace.xml	(date 1611974181843)
+@@ -19,11 +19,12 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="removed unused imports">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/2D Racer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2D Racer.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/META-INF/2D Racer.kotlin_module" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -100,8 +101,16 @@
+       <workItem from="1611887729196" duration="6524000" />
+       <workItem from="1611961139126" duration="218000" />
+       <workItem from="1611964482824" duration="211000" />
+-      <workItem from="1611969960133" duration="563000" />
++      <workItem from="1611969960133" duration="1769000" />
++    </task>
++    <task id="LOCAL-00001" summary="removed unused imports">
++      <created>1611970732911</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1611970732911</updated>
+     </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -118,4 +127,34 @@
+       </map>
+     </option>
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="removed unused imports" />
++    <option name="LAST_COMMIT_MESSAGE" value="removed unused imports" />
++  </component>
++  <component name="WindowStateProjectService">
++    <state width="1203" height="280" key="GridCell.Tab.0.bottom" timestamp="1611970744026">
++      <screen x="0" y="25" width="1792" height="1034" />
++    </state>
++    <state width="1203" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1034@0.25.1792.1034" timestamp="1611970744026" />
++    <state width="1203" height="280" key="GridCell.Tab.0.center" timestamp="1611970744026">
++      <screen x="0" y="25" width="1792" height="1034" />
++    </state>
++    <state width="1203" height="280" key="GridCell.Tab.0.center/0.25.1792.1034@0.25.1792.1034" timestamp="1611970744026" />
++    <state width="1203" height="280" key="GridCell.Tab.0.left" timestamp="1611970744026">
++      <screen x="0" y="25" width="1792" height="1034" />
++    </state>
++    <state width="1203" height="280" key="GridCell.Tab.0.left/0.25.1792.1034@0.25.1792.1034" timestamp="1611970744026" />
++    <state width="1203" height="280" key="GridCell.Tab.0.right" timestamp="1611970744026">
++      <screen x="0" y="25" width="1792" height="1034" />
++    </state>
++    <state width="1203" height="280" key="GridCell.Tab.0.right/0.25.1792.1034@0.25.1792.1034" timestamp="1611970744026" />
++    <state x="496" y="279" key="Vcs.Push.Dialog.v2" timestamp="1611970735813">
++      <screen x="0" y="25" width="1792" height="1034" />
++    </state>
++    <state x="496" y="279" key="Vcs.Push.Dialog.v2/0.25.1792.1034@0.25.1792.1034" timestamp="1611970735813" />
++    <state x="688" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611974181831">
++      <screen x="0" y="25" width="1792" height="1034" />
++    </state>
++    <state x="688" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1792.1034@0.25.1792.1034" timestamp="1611974181831" />
++  </component>
+ </project>
+\ No newline at end of file

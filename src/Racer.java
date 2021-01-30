@@ -6,7 +6,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.*;
 
-// This is a test, lauren please delete thissssssssssssssssss
 public class Racer {
 
     private static Boolean endgame;
