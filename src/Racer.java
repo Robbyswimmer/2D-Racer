@@ -71,14 +71,15 @@ public class Racer {
 
         JPanel myPanel = new JPanel();
 
+        //start game button
         JButton newGameButton = new JButton("New Game");
         newGameButton.addActionListener(new StartGame());
         myPanel.add(newGameButton);
 
-        //FIXME implement quit game functionality
-//        JButton quitButton = new JButton("Quit Game");
-//        quitButton.addActionListener(new QuitGame());
-//        myPanel.add(quitButton);
+        //quit game button
+        JButton quitButton = new JButton("Quit Game");
+        quitButton.addActionListener(new QuitGame());
+        myPanel.add(quitButton);
 
         //FIXME implement bindKey method
 //        bindKey(myPanel, "UP");
@@ -122,6 +123,12 @@ public class Racer {
 
             Thread t1 = new Thread(new Animate());
             t1.start();
+        }
+    }
+
+    private static class QuitGame implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            endgame = true;
         }
     }
 
