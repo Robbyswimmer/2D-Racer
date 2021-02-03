@@ -118,8 +118,6 @@ public class Racer {
                     System.out.println("Exception caught in Animate");
                 }
 
-                //FIXME added so that game doesn't crash
-                endgame = true;
             }
         }
     }
@@ -142,6 +140,7 @@ public class Racer {
                 System.out.println("Caught the exception in start game");
             }
 
+            endgame = false;
             Thread t1 = new Thread(new Animate());
             Thread t2 = new Thread(new PlayerMover());
             t1.start();
