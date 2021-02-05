@@ -66,7 +66,7 @@ public class Racer {
         p1OriginalY = (double) yOffset + ((double) winHeight / 2.0) - (p1Height / 2.0);
 
         try {
-            background = ImageIO.read(new File("Images/testTrack.png"));
+            background = ImageIO.read(new File("Images/testTrack2.png"));
             player = ImageIO.read(new File("Images/BlueCarLarge2.png"));
 
         } catch (IOException ioe) {
