@@ -21,7 +21,16 @@
   <component name="ChangeListManager">
     <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/test-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/In-Class Exercise#1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/~$-Class Exercise#1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$QuitGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$QuitGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
@@ -46,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Racer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="101" column="34" lean-forward="true" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="34" />
+            <state relative-caret-position="461">
+              <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,7 +89,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="106" />
+    <option name="x" value="99" />
     <option name="y" value="25" />
     <option name="width" value="1520" />
     <option name="height" value="969" />
@@ -92,6 +101,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,14 +113,17 @@
             <path>
               <item name="2D Racer" type="b2602c69:ProjectViewProjectNode" />
               <item name="2D Racer" type="462c0819:PsiDirectoryNode" />
+              <item name="Images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2D Racer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2D Racer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -120,7 +134,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612320841536" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612494489112" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -177,17 +191,20 @@
       <workItem from="1611961139126" duration="218000" />
       <workItem from="1611964482824" duration="211000" />
       <workItem from="1611969960133" duration="563000" />
-      <workItem from="1612231718468" duration="1094000" />
+      <workItem from="1612231718468" duration="1130000" />
+      <workItem from="1612408925590" duration="3105000" />
+      <workItem from="1612662457102" duration="165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12630000" />
+    <option name="totallyTimeSpent" value="15936000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="106" y="25" width="1520" height="969" extended-state="0" />
+    <frame x="99" y="25" width="1520" height="969" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14343707" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14749661" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -196,7 +213,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.282434" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.047072332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -254,6 +271,9 @@
     </option>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Images/BlueCarLarge2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -263,8 +283,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Racer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="101" column="34" lean-forward="true" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="34" />
+        <state relative-caret-position="461">
+          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
