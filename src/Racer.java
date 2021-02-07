@@ -41,8 +41,6 @@ public class Racer {
     private static JFrame appFrame;
     private static final int IFW = JComponent.WHEN_IN_FOCUSED_WINDOW;
 
-    private static long start = System.currentTimeMillis();
-
     // the remaining variables at the end of the asteroids chapter have been
     // omitted because they have been deemed unnecessary at this point in development
     // this includes things like flames, explosions, asteroids, enemies, and player bullets
@@ -113,7 +111,6 @@ public class Racer {
             while (!endgame) {
                 drawBackground();
                 drawPlayer();
-                drawClock();
 
                 try {
                     Thread.sleep(32);
@@ -123,21 +120,6 @@ public class Racer {
 
             }
         }
-    }
-
-    private static void drawClock() {
-        Graphics g = appFrame.getGraphics();
-        Graphics2D g2d = (Graphics2D) g;
-
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException ie) {
-
-        }
-
-        long end = System.currentTimeMillis();
-        float clock = (end - start) / 1000F;
-        g2d.drawString(clock + " seconds", 400, 300);
     }
 
     private static class StartGame implements ActionListener {
