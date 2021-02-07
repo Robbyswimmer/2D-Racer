@@ -68,7 +68,7 @@ public class Racer {
         p1OriginalY = (double) yOffset + ((double) winHeight / 2.0) - (p1Height / 2.0);
 
         try {
-            background = ImageIO.read(new File("Images/testTrack2.png"));
+            background = ImageIO.read(new File("Images/testTrack.png"));
             player = ImageIO.read(new File("Images/BlueCarLarge2.png"));
 
         } catch (IOException ioe) {
@@ -143,7 +143,7 @@ public class Racer {
     private static class StartGame implements ActionListener {
         public void actionPerformed(ActionEvent e) {
 
-            // endgame = true;
+           // endgame = true;
             upPressed = false;
             downPressed = false;
             leftPressed = false;
@@ -167,9 +167,7 @@ public class Racer {
     }
 
     private static class QuitGame implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
-            endgame = true;
-        }
+        public void actionPerformed(ActionEvent e) { endgame = true; }
     }
 
     private static class PlayerMover implements Runnable {
@@ -185,6 +183,9 @@ public class Racer {
         public void run() {
 
             while (!endgame) {
+
+                //System.out.println("Running PlayerMover()!");
+
                 try {
                     Thread.sleep(10);
                 } catch (InterruptedException e) {
@@ -192,9 +193,11 @@ public class Racer {
                 }
 
                 if (upPressed) {
-                    // System.out.println("upPressed == true!");
+                   // System.out.println("upPressed == true!");
                     p1Velocity += velocityStep;
                 }
+
+
                 if (downPressed) p1Velocity -= velocityStep;
 
                 if (leftPressed) {
@@ -222,13 +225,9 @@ public class Racer {
 
         private String action;
 
-        public KeyPressed() {
-            action = "";
-        }
+        public KeyPressed() { action = ""; }
 
-        public KeyPressed(String input) {
-            action = input;
-        }
+        public KeyPressed(String input) { action = input; }
 
         public void actionPerformed(ActionEvent e) {
             System.out.println("Key pressed");
@@ -244,13 +243,9 @@ public class Racer {
 
         private String action;
 
-        public KeyReleased() {
-            action = "";
-        }
+        public KeyReleased() { action = ""; }
 
-        public KeyReleased(String input) {
-            action = input;
-        }
+        public KeyReleased(String input) { action = input; }
 
         public void actionPerformed(ActionEvent e) {
             System.out.println("Key released");
@@ -275,7 +270,7 @@ public class Racer {
     private static void drawPlayer() {
         Graphics g = appFrame.getGraphics();
         Graphics2D g2d = (Graphics2D) g;
-        g2d.drawImage(rotateImageObject(p1).filter(player, null), (int) (p1.getX() + 0.5), (int) (p1.getY() + 0.5), null);
+        g2d.drawImage(rotateImageObject(p1).filter(player, null), (int)(p1.getX() + 0.5), (int)(p1.getY() + 0.5), null);
     }
 
 
@@ -288,68 +283,6 @@ public class Racer {
         Graphics g = appFrame.getGraphics();
         Graphics2D g2D = (Graphics2D) g;
         g2D.drawImage(background, xOffset, yOffset, null);
-    }
-
-    private static Boolean isInside(double p1x, double p1y, double p2x1, double p2y1, double p2x2, double p2y2) {
-        Boolean ret = false;
-        if (p1x > p2x1 && p1x < p2x2) {
-            if (p1y > p2y1 && p1y < p2y2) {
-                ret = true;
-            }
-            if (p1y > p2y2 && p1y < p2y1) {
-                ret = true;
-            }
-        }
-        if (p1x > p2x2 && p1x < p2x1) {
-            if (p1y > p2y1 && p1y < p2y2) {
-                ret = true;
-            }
-            if (p1y > p2y2 && p1y < p2y1) {
-                ret = true;
-            }
-        }
-        return ret;
-    }
-
-    private static Boolean collisionOccursCoordinates(double p1x1, double p1y1, double p1x2, double p1y2, double p2x1,
-                                                      double p2y1, double p2x2, double p2y2) {
-        Boolean ret = false;
-        if (isInside(p1x1, p1y1, p2x1, p2y1, p2x2, p2y2)) {
-            ret = true;
-        }
-        if (isInside(p1x1, p1y2, p2x1, p2y1, p2x2, p2y2)) {
-            ret = true;
-        }
-        if (isInside(p1x2, p1y1, p2x1, p2y1, p2x2, p2y2)) {
-            ret = true;
-        }
-        if (isInside(p1x2, p1y2, p2x1, p2y1, p2x2, p2y2)) {
-            ret = true;
-        }
-        if (isInside(p2x1, p2y1, p1x1, p1y1, p1x2, p1y2)) {
-            ret = true;
-        }
-        if (isInside(p2x1, p2y2, p1x1, p1y1, p1x2, p1y2)) {
-            ret = true;
-        }
-        if (isInside(p2x2, p2y1, p1x1, p1y1, p1x2, p1y2)) {
-            ret = true;
-        }
-        if (isInside(p2x2, p2y2, p1x1, p1y1, p1x2, p1y2)) {
-            ret = true;
-        }
-        return ret;
-    }
-
-    //FIXME is it supposed to be getyHeight() or getHeight()
-    private static Boolean collisonOccurs(ImageObject obj1, ImageObject obj2) {
-        Boolean ret = false;
-        if (collisionOccursCoordinates(obj1.getX(), obj1.getY(), obj1.getX() + obj1.getWidth(),
-                obj1.getY() + obj1.getyHeight(), obj1.getX(), obj2.getY(), obj2.getX() + obj2.getWidth(),
-                obj2.getY() + obj2.getyHeight())) {
-            ret = true;
-        }
-        return ret;
     }
 
     private static class ImageObject {
@@ -365,8 +298,7 @@ public class Racer {
         private double comX;
         private double comY;
 
-        public ImageObject() {
-        }
+        public ImageObject() {}
 
         public ImageObject(double xInput, double yInput, double xWidthInput, double yHeightInput, double angleInput) {
             x = xInput;
@@ -378,41 +310,15 @@ public class Racer {
             coords = new ArrayList<Double>();
         }
 
-        public double getX() {
-            return x;
-        }
-
-        public double getY() {
-            return y;
-        }
-
-        public double getWidth() {
-            return xWidth;
-        }
-
-        public double getyHeight() {
-            return yHeight;
-        }
-
-        public double getAngle() {
-            return angle;
-        }
-
-        public double getInternalAngle() {
-            return internalAngle;
-        }
-
-        public void setAngle(double angleInput) {
-            angle = angleInput;
-        }
-
-        public void setInternalAngle(double interalAngleInput) {
-            internalAngle = interalAngleInput;
-        }
-
-        public ArrayList<Double> getCoords() {
-            return coords;
-        }
+        public double getX() { return x; }
+        public double getY() { return y; }
+        public double getWidth() { return xWidth; }
+        public double getyHeight() { return yHeight; }
+        public double getAngle() { return angle; }
+        public double getInternalAngle() { return internalAngle; }
+        public void setAngle(double angleInput) { angle = angleInput; }
+        public void setInternalAngle( double interalAngleInput) { internalAngle = interalAngleInput; }
+        public ArrayList<Double> getCoords() { return coords; }
 
         public void setCoords(ArrayList<Double> coordsInput) {
             coords = coordsInput;
@@ -426,7 +332,7 @@ public class Racer {
             comX = getComX();
             comY = getComY();
 
-            for (int i = 0; i < coords.size(); i = i + 2) {
+            for (int i = 0; i  < coords.size(); i = i + 2) {
                 triangles.add(coords.get(i));
                 triangles.add(coords.get(i + 1));
 
@@ -438,14 +344,8 @@ public class Racer {
             }
         }
 
-        public void printTriangles() {
-            for (int i = 0; i < triangles.size(); i = i + 6) {
-                System.out.print("p0x: " + triangles.get(i) + ", p0y: " + triangles.get(i + 1));
-                System.out.print("p1x: " + triangles.get(i + 2) + ", p1y: " + triangles.get(i + 3));
-                System.out.print("p2x: " + triangles.get(i + 4) + ", p2y: " + triangles.get(i + 5));
-
-            }
-        }
+        //FIXME implement this method
+//        public void printTriangles() {}
 
         public double getComX() {
             double ret = 0;
@@ -482,38 +382,22 @@ public class Racer {
         }
 
         public void screenWrap(double leftEdge, double rightEdge, double topEdge, double bottomEdge) {
-            if (x > rightEdge) {
-                moveTo(leftEdge, getY());
-            }
-            if (x < leftEdge) {
-                moveTo(rightEdge, getY());
-            }
-            if (y > bottomEdge) {
-                moveTo(getX(), topEdge);
-            }
-            if (y < topEdge) {
-                moveTo(getX(), bottomEdge);
-            }
+            if (x > rightEdge) { moveTo(leftEdge, getY()); }
+            if (x < leftEdge) { moveTo(rightEdge, getY()); }
+            if (y > bottomEdge) { moveTo(getX(), topEdge); }
+            if (y < topEdge) { moveTo(getX(), bottomEdge); }
         }
 
         public void rotate(double angleInput) {
             angle += angleInput;
-            while (angle > twoPi) {
-                angle -= twoPi;
-            }
-            while (angle < 0) {
-                angle += twoPi;
-            }
+            while ( angle > twoPi) { angle -= twoPi; }
+            while (angle < 0) { angle += twoPi; }
         }
 
         public void spin(double internalAngleInput) {
             internalAngle += internalAngleInput;
-            while (internalAngle > twoPi) {
-                internalAngle -= twoPi;
-            }
-            while (internalAngle < 0) {
-                internalAngle += twoPi;
-            }
+            while (internalAngle > twoPi) { internalAngle -= twoPi; }
+            while (internalAngle < 0) { internalAngle += twoPi; }
         }
     }
 }
