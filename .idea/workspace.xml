@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Images/In-Class Exercise#1.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Images/~$-Class Exercise#1.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" afterDir="false" />
@@ -31,16 +32,16 @@
       <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$QuitGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$QuitGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
+=======
+>>>>>>> d356ff8626ad8b3cecb5472a27c8bdd5ec38caa3
       <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.idea/shelf/" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -66,6 +67,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> d356ff8626ad8b3cecb5472a27c8bdd5ec38caa3
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -81,6 +84,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -126,6 +130,10 @@
       </pane>
     </panes>
   </component>
+=======
+  <component name="ProjectId" id="1nlgBZrnu45D6PNOetLT5osWkxH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> d356ff8626ad8b3cecb5472a27c8bdd5ec38caa3
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -134,6 +142,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612494489112" />
   </component>
   <component name="RunDashboard">
@@ -147,6 +156,10 @@
         </RuleState>
       </list>
     </option>
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612320841536" />
+    <property name="nodejs_package_manager_path" value="npm" />
+>>>>>>> d356ff8626ad8b3cecb5472a27c8bdd5ec38caa3
   </component>
   <component name="RunManager" selected="Application.Racer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -191,6 +204,7 @@
       <workItem from="1611961139126" duration="218000" />
       <workItem from="1611964482824" duration="211000" />
       <workItem from="1611969960133" duration="563000" />
+<<<<<<< HEAD
       <workItem from="1612231718468" duration="1130000" />
       <workItem from="1612408925590" duration="3105000" />
       <workItem from="1612662457102" duration="165000" />
@@ -235,22 +249,25 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
+=======
+      <workItem from="1612231718468" duration="1094000" />
+      <workItem from="1612486432129" duration="299000" />
+      <workItem from="1612497088736" duration="316000" />
+      <workItem from="1612549985494" duration="678000" />
+      <workItem from="1612551007001" duration="3340000" />
+    </task>
+    <servers />
+  </component>
+>>>>>>> d356ff8626ad8b3cecb5472a27c8bdd5ec38caa3
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -269,6 +286,7 @@
         </entry>
       </map>
     </option>
+<<<<<<< HEAD
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Images/BlueCarLarge2.png">
@@ -291,5 +309,8 @@
         </state>
       </provider>
     </entry>
+=======
+    <option name="oldMeFiltersMigrated" value="true" />
+>>>>>>> d356ff8626ad8b3cecb5472a27c8bdd5ec38caa3
   </component>
 </project>
