@@ -61,8 +61,8 @@ public class Racer {
         twoPi = 2 * pi;
         endgame = false;
 
-        p1Height = 25;
-        p1Width = 25;
+        p1Height = 50;
+        p1Width = 50;
         p1OriginalX = (double) xOffset + ((double) winWidth / 2.0) - (p1Width / 2.0);
         p1OriginalY = (double) yOffset + ((double) winHeight / 2.0) - (p1Height / 2.0);
 
@@ -117,7 +117,6 @@ public class Racer {
             while (!endgame) {
                 drawBackground();
                 drawPlayer();
-
                 try {
                     Thread.sleep(32);
                 } catch (InterruptedException e) {
@@ -200,7 +199,7 @@ public class Racer {
                 }
 
                 p1.move(-p1Velocity * Math.cos(p1.getAngle() - pi / 2.0), p1Velocity * Math.sin(p1.getAngle() - pi / 2.0));
-                p1.screenWrap(xOffset, xOffset + winWidth, yOffset, yOffset + winHeight);
+                //p1.screenWrap(xOffset, xOffset + winWidth, yOffset, yOffset + winHeight);
             }
 
         }
@@ -263,6 +262,7 @@ public class Racer {
     private static void drawPlayer() {
         Graphics g = appFrame.getGraphics();
         Graphics2D g2d = (Graphics2D) g;
+        //g2d.rotate(90);
         g2d.drawImage(rotateImageObject(p1).filter(player, null), (int) (p1.getX() + 0.5), (int) (p1.getY() + 0.5), null);
     }
 
