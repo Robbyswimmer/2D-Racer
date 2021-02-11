@@ -16,6 +16,7 @@ public class Racer {
     private static Boolean endgame;
     private static BufferedImage background;
     private static BufferedImage player;
+    private static BufferedImage coverBackground;
 
     private static Boolean upPressed;
     private static Boolean downPressed;
@@ -68,20 +69,25 @@ public class Racer {
         try {
             background = ImageIO.read(new File("Images/testTrack2.png"));
             player = ImageIO.read(new File("Images/BlueCarLarge2.png"));
+            coverBackground = ImageIO.read(new File("Images/GraphicsCover.png"));
 
         } catch (IOException ioe) {
             System.out.println("Find the right image you dingus");
         }
+
     }
 
     public static void main(String[] args) {
-
         setup();
         appFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         appFrame.setSize(1320, 937);
 
         JPanel myPanel = new JPanel();
 
+        ImageIcon icon = new ImageIcon("Images/GraphicsCover.png");
+        JLabel thumb = new JLabel();
+        thumb.setIcon(icon);
+        //drawCoverBackground();
         //start game button
         JButton newGameButton = new JButton("New Game");
         newGameButton.addActionListener(new StartGame());
@@ -264,6 +270,12 @@ public class Racer {
     private static AffineTransformOp rotateImageObject(ImageObject obj) {
         AffineTransform at = AffineTransform.getRotateInstance(-obj.getAngle(), obj.getWidth() / 2.0, obj.getyHeight() / 2.0);
         return new AffineTransformOp(at, AffineTransformOp.TYPE_BILINEAR);
+    }
+
+    private static void drawCoverBackground() {
+        Graphics g = appFrame.getGraphics();
+        Graphics2D g2D = (Graphics2D) g;
+        g2D.drawImage(coverBackground, xOffset, yOffset, null);
     }
 
     private static void drawBackground() {
