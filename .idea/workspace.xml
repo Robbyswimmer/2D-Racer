@@ -21,11 +21,42 @@
   <component name="ChangeListManager">
     <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Racer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3086">
+              <caret line="464" column="23" lean-forward="true" selection-start-line="464" selection-start-column="23" selection-end-line="464" selection-end-column="23" />
+              <folding>
+                <element signature="e#1534#1535#0" expanded="true" />
+                <element signature="e#1557#1558#0" expanded="true" />
+                <element signature="e#4768#4769#0" expanded="true" />
+                <element signature="e#4806#4807#0" expanded="true" />
+                <element signature="e#6343#6344#0" expanded="true" />
+                <element signature="e#6378#6379#0" expanded="true" />
+                <element signature="e#6421#6422#0" expanded="true" />
+                <element signature="e#6459#6460#0" expanded="true" />
+                <element signature="e#6938#6939#0" expanded="true" />
+                <element signature="e#6973#6974#0" expanded="true" />
+                <element signature="e#7017#7018#0" expanded="true" />
+                <element signature="e#7055#7056#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,11 +65,50 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>start</find>
+      <find>wrap</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/Racer.java" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1nlgBZrnu45D6PNOetLT5osWkxH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="2D Racer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2D Racer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2D Racer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2D Racer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,6 +118,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612320841536" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.Racer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -78,7 +160,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -98,6 +180,44 @@
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1960000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1845" y="46" width="1497" height="967" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24948454" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" weight="0.27963176" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
@@ -106,7 +226,14 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -125,6 +252,35 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="129" column="10" selection-start-line="129" selection-start-column="10" selection-end-line="129" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Racer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3086">
+          <caret line="464" column="23" lean-forward="true" selection-start-line="464" selection-start-column="23" selection-end-line="464" selection-end-column="23" />
+          <folding>
+            <element signature="e#1534#1535#0" expanded="true" />
+            <element signature="e#1557#1558#0" expanded="true" />
+            <element signature="e#4768#4769#0" expanded="true" />
+            <element signature="e#4806#4807#0" expanded="true" />
+            <element signature="e#6343#6344#0" expanded="true" />
+            <element signature="e#6378#6379#0" expanded="true" />
+            <element signature="e#6421#6422#0" expanded="true" />
+            <element signature="e#6459#6460#0" expanded="true" />
+            <element signature="e#6938#6939#0" expanded="true" />
+            <element signature="e#6973#6974#0" expanded="true" />
+            <element signature="e#7017#7018#0" expanded="true" />
+            <element signature="e#7055#7056#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
