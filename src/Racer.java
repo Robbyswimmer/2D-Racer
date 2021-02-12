@@ -16,6 +16,7 @@ public class Racer {
     private static Boolean endgame;
     private static BufferedImage background;
     private static BufferedImage player;
+    private static BufferedImage player2;
     private static BufferedImage coverBackground;
 
     private static Boolean upPressed;
@@ -23,13 +24,25 @@ public class Racer {
     private static Boolean leftPressed;
     private static Boolean rightPressed;
 
+    private static Boolean wPressed;
+    private static Boolean sPressed;
+    private static Boolean aPressed;
+    private static Boolean dPressed;
+
     private static ImageObject p1;
+    private static ImageObject p2;
 
     private static double p1Width;
     private static double p1Height;
     private static double p1OriginalX;
     private static double p1OriginalY;
     private static double p1Velocity;
+
+    private static double p2Width;
+    private static double p2Height;
+    private static double p2OriginalX;
+    private static double p2OriginalY;
+    private static double p2Velocity;
 
     private static int xOffset;
     private static int yOffset;
@@ -63,12 +76,16 @@ public class Racer {
 
         p1Height = 50;
         p1Width = 50;
-        p1OriginalX = (double) xOffset + ((double) winWidth / 2.0) - (p1Width / 2.0);
-        p1OriginalY = (double) yOffset + ((double) winHeight / 2.0) - (p1Height / 2.0);
+        p1OriginalX = (double) xOffset + ((double) winWidth / 2.0) - (p1Width / 2.0) + 400;
+        p1OriginalY = (double) yOffset + ((double) winHeight / 2.0) - (p1Height / 2.0) + 50;
+
+        p2OriginalX = (double) xOffset + ((double) winWidth / 2.0) - (p1Width / 2.0) + 400;
+        p2OriginalY = (double) yOffset + ((double) winHeight / 2.0) - (p1Height / 2.0) + 100;
 
         try {
             background = ImageIO.read(new File("Images/testTrack2.png"));
             player = ImageIO.read(new File("Images/BlueCarLarge2.png"));
+            player2 = ImageIO.read(new File("Images/GreenCarLarge2.png"));
             coverBackground = ImageIO.read(new File("Images/GraphicsCover.png"));
 
         } catch (IOException ioe) {
@@ -98,10 +115,17 @@ public class Racer {
         quitButton.addActionListener(new QuitGame());
         myPanel.add(quitButton);
 
+        //controls for player 1
         bindKey(myPanel, "UP");
         bindKey(myPanel, "DOWN");
         bindKey(myPanel, "LEFT");
         bindKey(myPanel, "RIGHT");
+
+        //controls for player 2
+        bindKey(myPanel, "W");
+        bindKey(myPanel, "S");
+        bindKey(myPanel, "A");
+        bindKey(myPanel, "D");
         bindKey(myPanel, "F");
 
         appFrame.getContentPane().add(myPanel, "South");
@@ -136,8 +160,17 @@ public class Racer {
             leftPressed = false;
             rightPressed = false;
 
+            wPressed = false;
+            sPressed = false;
+            aPressed = false;
+            dPressed = false;
+
+            //instantiate the imageobjects for the player cars
             p1 = new ImageObject(p1OriginalX, p1OriginalY, p1Width, p1Height, 0.0);
+            p2 = new ImageObject(p2OriginalX, p2OriginalY, p1Width, p1Height, 0.0);
+
             p1Velocity = 0.0;
+            p2Velocity = 0.0;
 
             try {
                 Thread.sleep(50);
@@ -224,6 +257,11 @@ public class Racer {
             if (action.equals("DOWN")) downPressed = true;
             if (action.equals("LEFT")) leftPressed = true;
             if (action.equals("RIGHT")) rightPressed = true;
+
+            if (action.equals("W")) wPressed = true;
+            if (action.equals("S")) sPressed = true;
+            if (action.equals("A")) aPressed = true;
+            if (action.equals("D")) dPressed = true;
         }
     }
 
@@ -246,6 +284,11 @@ public class Racer {
             if (action.equals("DOWN")) downPressed = false;
             if (action.equals("LEFT")) leftPressed = false;
             if (action.equals("RIGHT")) rightPressed = false;
+
+            if (action.equals("W")) wPressed = false;
+            if (action.equals("S")) sPressed = false;
+            if (action.equals("A")) aPressed = false;
+            if (action.equals("D")) dPressed = false;
         }
     }
 
@@ -260,12 +303,15 @@ public class Racer {
     }
 
     private static void drawPlayer() {
+
+        //import graphics
         Graphics g = appFrame.getGraphics();
         Graphics2D g2d = (Graphics2D) g;
-        //g2d.rotate(90);
-        g2d.drawImage(rotateImageObject(p1).filter(player, null), (int) (p1.getX() + 0.5), (int) (p1.getY() + 0.5), null);
-    }
 
+        //draw the players
+        g2d.drawImage(rotateImageObject(p1).filter(player, null), (int) (p1.getX() + 0.5), (int) (p1.getY() + 0.5), null);
+        g2d.drawImage(rotateImageObject(p2).filter(player2, null), (int) (p2.getX() + 0.5), (int) (p2.getY() + 0.5), null);
+    }
 
     private static AffineTransformOp rotateImageObject(ImageObject obj) {
         AffineTransform at = AffineTransform.getRotateInstance(-obj.getAngle(), obj.getWidth() / 2.0, obj.getyHeight() / 2.0);
