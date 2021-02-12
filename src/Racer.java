@@ -52,6 +52,10 @@ public class Racer {
     private static double pi;
     private static double twoPi;
 
+    //used in the drawClock method to determine how many seconds
+    //have elapsed since the beginning of the game
+    private static long start = System.currentTimeMillis();
+
     private static JFrame appFrame;
     private static final int IFW = JComponent.WHEN_IN_FOCUSED_WINDOW;
 
@@ -64,6 +68,11 @@ public class Racer {
         setup();
     }
 
+    /**
+     * Initializes important variables that need to be reset at the beginning of each game,
+     * imports the game images, establishes the app frame, names the frame, catches any necessary
+     * exceptions caused by initialization of images
+     */
     public static void setup() {
         appFrame = new JFrame("2D Racer");
         xOffset = 0;
@@ -130,9 +139,12 @@ public class Racer {
 
         appFrame.getContentPane().add(myPanel, "South");
         appFrame.setVisible(true);
-
     }
 
+    /**
+     * Responsible for drawing the images – dynamic and static –
+     * that can be seen in the game
+     */
     private static class Animate implements Runnable {
         Graphics g = appFrame.getGraphics();
         Graphics2D g2d = (Graphics2D) g;
@@ -141,6 +153,7 @@ public class Racer {
             while (!endgame) {
                 drawBackground();
                 drawPlayer();
+                drawClock();
                 try {
                     Thread.sleep(32);
                 } catch (InterruptedException e) {
@@ -165,7 +178,7 @@ public class Racer {
             aPressed = false;
             dPressed = false;
 
-            //instantiate the imageobjects for the player cars
+            //instantiate the ImageObjects for the player cars
             p1 = new ImageObject(p1OriginalX, p1OriginalY, p1Width, p1Height, 0.0);
             p2 = new ImageObject(p2OriginalX, p2OriginalY, p1Width, p1Height, 0.0);
 
@@ -186,6 +199,9 @@ public class Racer {
         }
     }
 
+    /**
+     * Quits the game and ends all current threads
+     */
     private static class QuitGame implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             endgame = true;
@@ -238,6 +254,10 @@ public class Racer {
         }
     }
 
+    /**
+     * Determines whether or not one of the bound keys has been
+     * pressed and sets the correct variable to TRUE
+     */
     private static class KeyPressed extends AbstractAction {
 
         private String action;
@@ -265,6 +285,11 @@ public class Racer {
         }
     }
 
+
+    /**
+     * Determines whether or not one of the bound keys has been
+     * pressed and sets the correct variable to FALSE
+     */
     private static class KeyReleased extends AbstractAction {
 
         private String action;
@@ -292,6 +317,11 @@ public class Racer {
         }
     }
 
+    /**
+     * Method responsible for binding the keyboard keys to the game
+     * @param myPanel imports the game panel
+     * @param input represents the given keyboard input as a string
+     */
     private static void bindKey(JPanel myPanel, String input) {
         System.out.println("Key bound");
 
@@ -302,6 +332,33 @@ public class Racer {
         myPanel.getActionMap().put(input + " released", new KeyReleased(input));
     }
 
+    /**
+     * The main method responsible for drawing the stop clock during the game
+     */
+    private static void drawClock() {
+        Graphics g = appFrame.getGraphics();
+        Graphics2D g2d = (Graphics2D) g;
+
+        //gets the current time and compares it against when execution began
+        long end = System.currentTimeMillis();
+        float sec = (end - start) / 1000f;
+        Stroke oldStroke = g2d.getStroke();
+
+        //sets the brush, color, and draws the strings / shapes for the clock
+        g2d.setColor(Color.WHITE);
+        g2d.fillRect(80, 75, 230, 100);
+        g2d.setColor(Color.black);
+        g2d.setStroke(new BasicStroke(5));
+        g2d.drawRect(80, 75, 232, 102);
+        g2d.setStroke(oldStroke);
+        g2d.setFont(new Font("TimesRoman", Font.BOLD, 30));
+        g2d.drawString(sec + " seconds", 100, 120);
+        g2d.drawString("Best Lap: FIX" , 100, 150);
+    }
+
+    /**
+     * Draws the player sprites
+     */
     private static void drawPlayer() {
 
         //import graphics
@@ -313,23 +370,40 @@ public class Racer {
         g2d.drawImage(rotateImageObject(p2).filter(player2, null), (int) (p2.getX() + 0.5), (int) (p2.getY() + 0.5), null);
     }
 
+    /**
+     * Responsible for rotating the object attached to the player image
+     * so that it can track movement accurately
+     * @param obj the given image that is being rotated
+     * @return returns the transformation applied to the image object
+     */
     private static AffineTransformOp rotateImageObject(ImageObject obj) {
         AffineTransform at = AffineTransform.getRotateInstance(-obj.getAngle(), obj.getWidth() / 2.0, obj.getyHeight() / 2.0);
         return new AffineTransformOp(at, AffineTransformOp.TYPE_BILINEAR);
     }
 
+    /**
+     * Should draw the player startup screen
+     */
+    //FIXME does not work currently
     private static void drawCoverBackground() {
         Graphics g = appFrame.getGraphics();
         Graphics2D g2D = (Graphics2D) g;
         g2D.drawImage(coverBackground, xOffset, yOffset, null);
     }
 
+    /**
+     * Draws the main background of the game which is the race track with
+     * building and other details
+     */
     private static void drawBackground() {
         Graphics g = appFrame.getGraphics();
         Graphics2D g2D = (Graphics2D) g;
         g2D.drawImage(background, xOffset, yOffset, null);
     }
 
+    /**
+     * Used to determine if two objects are overlapping
+     */
     private static Boolean isInside(double p1x, double p1y, double p2x1, double p2y1, double p2x2, double p2y2) {
         Boolean ret = false;
         if (p1x > p2x1 && p1x < p2x2) {
@@ -351,6 +425,9 @@ public class Racer {
         return ret;
     }
 
+    /**
+     * @return returns the coordinates at which a collision is occurring in the game
+     */
     private static Boolean collisionOccursCoordinates(double p1x1, double p1y1, double p1x2, double p1y2, double p2x1,
                                                       double p2y1, double p2x2, double p2y2) {
         Boolean ret = false;
@@ -381,7 +458,9 @@ public class Racer {
         return ret;
     }
 
-    //FIXME is it supposed to be getyHeight() or getHeight()
+    /**
+     * @return returns whether or not a collision has occurred in the game
+     */
     private static Boolean collisonOccurs(ImageObject obj1, ImageObject obj2) {
         Boolean ret = false;
         if (collisionOccursCoordinates(obj1.getX(), obj1.getY(), obj1.getX() + obj1.getWidth(),
@@ -392,6 +471,10 @@ public class Racer {
         return ret;
     }
 
+    /**
+     * This class defines the ImageObject which is essentially the object that is attached
+     * to the image that is responsible primarily for movement and collision detection / handling
+     */
     private static class ImageObject {
 
         private double x;
@@ -460,7 +543,6 @@ public class Racer {
             //printTriangles();
         }
 
-        //FIXME this was converted from vector to arraylist, so if errors exist check the conversion
         public void generateTriangles() {
             triangles = new ArrayList<Double>();
             comX = getComX();
