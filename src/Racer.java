@@ -168,6 +168,7 @@ public class Racer {
         public void actionPerformed(ActionEvent e) {
 
             // endgame = true;
+            start = System.currentTimeMillis();
             upPressed = false;
             downPressed = false;
             leftPressed = false;
@@ -213,9 +214,10 @@ public class Racer {
         private double velocityStep;
         private double rotateStep;
 
+        //level of acceleration and rotation speed
         public PlayerMover() {
             velocityStep = 0.01;
-            rotateStep = 0.01;
+            rotateStep = 0.03;
         }
 
         public void run() {
@@ -227,12 +229,21 @@ public class Racer {
                     System.out.println("Exception caught for PlayerMover");
                 }
 
+                //handle acceleration for player 1 and 2
                 if (upPressed) {
                     p1Velocity += velocityStep;
+                } else if (wPressed) {
+                    p2Velocity += velocityStep;
                 }
 
-                if (downPressed) p1Velocity -= velocityStep;
+                //handle braking for player 1 and 2
+                if (downPressed)
+                    p1Velocity -= velocityStep * 2;
+                else if (sPressed) {
+                    p2Velocity -= velocityStep * 2;
+                }
 
+                //handle left rotation for player 1 and 2
                 if (leftPressed) {
                     if (p1Velocity < 0)
                         p1.rotate(-rotateStep);
@@ -240,6 +251,14 @@ public class Racer {
                         p1.rotate(rotateStep);
                 }
 
+                if (aPressed) {
+                    if (p1Velocity < 0)
+                        p2.rotate(-rotateStep);
+                    else
+                        p2.rotate(rotateStep);
+                }
+
+                //handle right rotation for player 1 and 2
                 if (rightPressed) {
                     if (p1Velocity < 0)
                         p1.rotate(rotateStep);
@@ -247,7 +266,15 @@ public class Racer {
                         p1.rotate(-rotateStep);
                 }
 
+                if (dPressed) {
+                    if (p1Velocity < 0)
+                        p2.rotate(rotateStep);
+                    else
+                        p2.rotate(-rotateStep);
+                }
+
                 p1.move(-p1Velocity * Math.cos(p1.getAngle() - pi / 2.0), p1Velocity * Math.sin(p1.getAngle() - pi / 2.0));
+                p2.move(-p2Velocity * Math.cos(p2.getAngle() - pi / 2.0), p2Velocity * Math.sin(p2.getAngle() - pi / 2.0));
                 //p1.screenWrap(xOffset, xOffset + winWidth, yOffset, yOffset + winHeight);
             }
 
@@ -354,6 +381,20 @@ public class Racer {
         g2d.setFont(new Font("TimesRoman", Font.BOLD, 30));
         g2d.drawString(sec + " seconds", 100, 120);
         g2d.drawString("Best Lap: FIX" , 100, 150);
+    }
+
+    /**
+     * Display the current speed for each player along with
+     * lap information
+     */
+    private static void drawSpeed() {
+
+        Graphics g = appFrame.getGraphics();
+        Graphics2D g2d = (Graphics2D) g;
+
+        g2d.fillRect(650, 120, 200, 60);
+        
+
     }
 
     /**
