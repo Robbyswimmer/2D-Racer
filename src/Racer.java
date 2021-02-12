@@ -179,9 +179,9 @@ public class Racer {
                 }
 
                 if (upPressed) {
-                    // System.out.println("upPressed == true!");
                     p1Velocity += velocityStep;
                 }
+
                 if (downPressed) p1Velocity -= velocityStep;
 
                 if (leftPressed) {
