@@ -35,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Racer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-625">
-              <caret line="588" column="17" lean-forward="true" selection-start-line="588" selection-start-column="17" selection-end-line="588" selection-end-column="17" />
+            <state relative-caret-position="294">
+              <caret line="568" column="48" lean-forward="true" selection-start-line="568" selection-start-column="48" selection-end-line="568" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,6 +67,8 @@
       <find>drawspe</find>
       <find>maxSpeed</find>
       <find>startGame</find>
+      <find>drawPlayer</find>
+      <find>move</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -81,10 +83,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1766" />
-    <option name="y" value="54" />
-    <option name="width" value="1497" />
-    <option name="height" value="967" />
+    <option name="x" value="-1891" />
+    <option name="y" value="34" />
+    <option name="width" value="1860" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectId" id="1nlgBZrnu45D6PNOetLT5osWkxH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -188,18 +190,18 @@
       <workItem from="1612889274506" duration="313000" />
       <workItem from="1613101924058" duration="3605000" />
       <workItem from="1613170708706" duration="7795000" />
-      <workItem from="1613241785849" duration="4477000" />
+      <workItem from="1613241785849" duration="7866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16997000" />
+    <option name="totallyTimeSpent" value="20386000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1766" y="54" width="1497" height="967" extended-state="0" />
+    <frame x="-1891" y="34" width="1860" height="1046" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25841925" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20682068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -208,7 +210,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49965635" visible="true" weight="0.21173763" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49965635" visible="true" weight="0.2056962" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -218,7 +220,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5003436" side_tool="true" weight="0.32911393" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.27963176" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.27953586" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -285,10 +287,13 @@
     <entry file="file://$PROJECT_DIR$/Images/BlueCarLarge2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Images/wall-long.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Racer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-625">
-          <caret line="588" column="17" lean-forward="true" selection-start-line="588" selection-start-column="17" selection-end-line="588" selection-end-column="17" />
+        <state relative-caret-position="294">
+          <caret line="568" column="48" lean-forward="true" selection-start-line="568" selection-start-column="48" selection-end-line="568" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

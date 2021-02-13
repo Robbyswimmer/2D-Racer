@@ -85,6 +85,9 @@ public class Racer {
     private static BufferedImage Green;
     private static BufferedImage White;
 
+    //array of barriers for the cars
+    private static BufferedImage[] barriers;
+
     // the remaining variables at the end of the asteroids chapter have been
     // omitted because they have been deemed unnecessary at this point in development
     // this includes things like flames, explosions, asteroids, enemies, and player bullets
@@ -115,11 +118,16 @@ public class Racer {
 
         p1Height = 50;
         p1Width = 50;
+
+        //initial coords for the players
         p1OriginalX = (double) xOffset + ((double) winWidth / 2.0) - (p1Width / 2.0) + 400;
         p1OriginalY = (double) yOffset + ((double) winHeight / 2.0) - (p1Height / 2.0) + 50;
 
         p2OriginalX = (double) xOffset + ((double) winWidth / 2.0) - (p1Width / 2.0) + 400;
         p2OriginalY = (double) yOffset + ((double) winHeight / 2.0) - (p1Height / 2.0) + 100;
+
+        System.out.println("P1 x: " + p1OriginalX + ", P1 y: " + p1OriginalY);
+        System.out.println("P2 x: " + p2OriginalX + ", P2 y: " + p2OriginalY);
 
         try {
 
@@ -135,6 +143,14 @@ public class Racer {
             Orange = ImageIO.read(new File("Images/OrangeCarLarge2.png"));
             Green = ImageIO.read(new File("Images/GreenCarLarge2.png"));
             White = ImageIO.read(new File("Images/WhiteCarLarge2.png"));
+
+            //use this to create an array of barriers to act as collision for the cars
+//            for (int i = 0; i < 8; i++) {
+//                if (i < 4)
+//                    barriers[i] = ImageIO.read(new File("Images/wall-long.png"));
+//                else
+//                    barriers[i] = ImageIO.read(new File("Images/wall-short.png"));
+//            }
 
         } catch (IOException ioe) {
             System.out.println("Find the right image you dingus");
@@ -358,6 +374,10 @@ public class Racer {
                     p1Velocity -= velocityStep * 3;
                 } else if (!wPressed && !sPressed && p2Velocity > 0) {
                     p2Velocity -= velocityStep * 3;
+                } else if (!upPressed && !downPressed && p1Velocity < 0) {
+                    p1Velocity += velocityStep * 3;
+                } else if (!wPressed && !sPressed && p2Velocity < 0) {
+                    p1Velocity += velocityStep * 3;
                 }
 
                 //handle braking for player 1 and 2
@@ -545,6 +565,16 @@ public class Racer {
         g2d.drawImage(rotateImageObject(p2).filter(player2, null), (int) (p2.getX() + 0.5), (int) (p2.getY() + 0.5), null);
     }
 
+    //draw barriers for the cars if necessary
+    //FIXME decide if this should be used or not
+    private static void drawBarriers() {
+
+        //import graphics
+        Graphics g = appFrame.getGraphics();
+        Graphics2D g2d = (Graphics2D) g;
+
+    }
+
     /**
      * Responsible for rotating the object attached to the player image
      * so that it can track movement accurately
@@ -586,6 +616,8 @@ public class Racer {
                     System.out.println("CRASH between p1 and p2!!!!");
                     p1Velocity = 0;
                     p2Velocity = 0;
+
+                    p1.moveTo(p1OriginalX, p1OriginalY);
                 }
 
                 if (collisionOccurs(p2, p1)) {
@@ -658,6 +690,20 @@ public class Racer {
     //FIXME if error exists check whether or not the other collisonOccurs method works
     //this is the simplified version with improved syntax
     private static boolean collisionOccurs(ImageObject obj1, ImageObject obj2) {
+
+        //printing coords to check for overlapping objects
+        System.out.println("P1 x: " + obj1.x + ", P1 y: " + obj1.y);
+        System.out.println("P2 x: " + obj2.x + ", P2 y: " + obj2.y);
+        System.out.println();
+        System.out.println();
+
+        //limit the amount of input being printed out
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ie) {
+            System.out.println("ie");
+        }
+
         return collisionOccursCoordinates(obj1.getX(), obj1.getY(), obj1.getX() + obj1.getWidth(),
                 obj1.getY() + obj1.getyHeight(), obj2.getX(), obj2.getY(), obj2.getX() + obj2.getWidth(),
                 obj2.getY() + obj2.getyHeight());
