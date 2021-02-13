@@ -118,11 +118,14 @@ public class Racer {
         p2OriginalY = (double) yOffset + ((double) winHeight / 2.0) - (p1Height / 2.0) + 100;
 
         try {
+
+            //default images for the game
             background = ImageIO.read(new File("Images/testTrack2.png"));
             player = ImageIO.read(new File("Images/BlueCarLarge2.png"));
             player2 = ImageIO.read(new File("Images/RedCarLarge2.png"));
             coverBackground = ImageIO.read(new File("Images/GraphicsCover.png"));
 
+            //initializes all of the colors so that players can change the colors of their cars
             Blue = ImageIO.read(new File("Images/BlueCarLarge2.png"));
             Red = ImageIO.read(new File("Images/RedCarLarge2.png"));
             Orange = ImageIO.read(new File("Images/OrangeCarLarge2.png"));
@@ -135,6 +138,10 @@ public class Racer {
 
     }
 
+    /**
+     * Main method for initializing the game, adding buttons, adding drop down menus,
+     * binding keyboard keys, creating the main app frame
+     */
     public static void main(String[] args) {
         setup();
         appFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
