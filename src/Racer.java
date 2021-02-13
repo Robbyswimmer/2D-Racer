@@ -6,6 +6,7 @@ import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
+import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
@@ -13,6 +14,7 @@ import java.lang.management.RuntimeMXBean;
 import java.security.Key;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import javax.sound.*;
 
 public class Racer {
 
@@ -87,6 +89,10 @@ public class Racer {
 
     //array of barriers for the cars
     private static BufferedImage[] barriers;
+
+    //variables for playing music
+    private static AudioInputStream ais;
+    private static Clip clip;
 
     // the remaining variables at the end of the asteroids chapter have been
     // omitted because they have been deemed unnecessary at this point in development
@@ -322,6 +328,17 @@ public class Racer {
             } catch (InterruptedException ie) {
                 System.out.println("Caught the exception in start game");
             }
+
+            try {
+                //play music
+                ais = AudioSystem.getAudioInputStream(new File("Sounds/8-bit1.wav"));
+                clip = AudioSystem.getClip();
+                clip.open(ais);
+                clip.loop(Clip.LOOP_CONTINUOUSLY);
+                clip.start();
+            } catch (UnsupportedAudioFileException uafe) {}
+            catch (IOException ioe) {}
+            catch (LineUnavailableException lue) {}
 
             endgame = false;
             Thread t1 = new Thread(new Animate());
