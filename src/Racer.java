@@ -47,6 +47,9 @@ public class Racer {
     private static double p2OriginalY;
     private static double p2Velocity;
 
+    //max speed for the cars
+    private static int maxSpeed;
+
     private static int xOffset;
     private static int yOffset;
     private static int winWidth;
@@ -106,6 +109,7 @@ public class Racer {
         twoPi = 2 * pi;
         endgame = false;
 
+        maxSpeed = 3;
         maxLaps = 3;
         currentLap = 1;
 
@@ -242,7 +246,6 @@ public class Racer {
      */
     private static class CarListener1 implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-
             int n = carList.getSelectedIndex();
             if (n == 0)
                 player = Red;
@@ -262,7 +265,6 @@ public class Racer {
      */
     private static class CarListener2 implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-
             int n = carList2.getSelectedIndex();
             if (n == 0)
                 player2 = Red;
@@ -308,8 +310,10 @@ public class Racer {
             endgame = false;
             Thread t1 = new Thread(new Animate());
             Thread t2 = new Thread(new PlayerMover());
+            Thread t3 = new Thread(new CollisionChecker());
             t1.start();
             t2.start();
+            t3.start();
         }
     }
 
@@ -343,17 +347,24 @@ public class Racer {
                 }
 
                 //handle acceleration for player 1 and 2
-                if (upPressed) {
-                    p1Velocity += velocityStep;
-                } else if (wPressed) {
-                    p2Velocity += velocityStep;
+                if (upPressed && p1Velocity < maxSpeed) {
+                    p1Velocity += velocityStep * 4;
+                } else if (wPressed && p2Velocity < maxSpeed) {
+                    p2Velocity += velocityStep * 4;
+                }
+
+                //handle air braking – slowing naturally because no acceleration
+                if (!upPressed && !downPressed && p1Velocity > 0) {
+                    p1Velocity -= velocityStep * 3;
+                } else if (!wPressed && !sPressed && p2Velocity > 0) {
+                    p2Velocity -= velocityStep * 3;
                 }
 
                 //handle braking for player 1 and 2
-                if (downPressed)
-                    p1Velocity -= velocityStep * 2;
-                else if (sPressed) {
-                    p2Velocity -= velocityStep * 2;
+                if (downPressed && p1Velocity * -1 < maxSpeed / 2)
+                    p1Velocity -= velocityStep * 5;
+                else if (sPressed && p2Velocity * -1 < maxSpeed / 2) {
+                    p2Velocity -= velocityStep * 5;
                 }
 
                 //handle left rotation for player 1 and 2
@@ -411,7 +422,7 @@ public class Racer {
         }
 
         public void actionPerformed(ActionEvent e) {
-            System.out.println("Key pressed");
+//            System.out.println("Key pressed");
 
             if (action.equals("UP")) upPressed = true;
             if (action.equals("DOWN")) downPressed = true;
@@ -443,7 +454,7 @@ public class Racer {
         }
 
         public void actionPerformed(ActionEvent e) {
-            System.out.println("Key released");
+//            System.out.println("Key released");
 
             if (action.equals("UP")) upPressed = false;
             if (action.equals("DOWN")) downPressed = false;
@@ -516,8 +527,8 @@ public class Racer {
         //draw the text to display current speed
         DecimalFormat df = new DecimalFormat("###");
         g2d.setFont(new Font("TimesRoman", Font.BOLD, 30));
-        g2d.drawString("P1 Speed: " + df.format(p1Velocity * 100) + " MPH", 880, 115);
-        g2d.drawString("P2 Speed: " + df.format(p2Velocity * 100) + " MPH", 880, 155);
+        g2d.drawString("P1 Speed: " + df.format(p1Velocity * 20) + " MPH", 880, 115);
+        g2d.drawString("P2 Speed: " + df.format(p2Velocity * 20) + " MPH", 880, 155);
     }
 
     /**
@@ -563,6 +574,25 @@ public class Racer {
         Graphics g = appFrame.getGraphics();
         Graphics2D g2D = (Graphics2D) g;
         g2D.drawImage(background, xOffset, yOffset, null);
+    }
+
+    /**
+     * Class for collision checking thread
+     */
+    private static class CollisionChecker implements Runnable {
+        public void run() {
+            while (!endgame) {
+                if (collisionOccurs(p1, p2)) {
+                    System.out.println("CRASH between p1 and p2!!!!");
+                    p1Velocity = 0;
+                    p2Velocity = 0;
+                }
+
+                if (collisionOccurs(p2, p1)) {
+                    System.out.println("boop");
+                }
+            }
+        }
     }
 
     /**
@@ -625,15 +655,24 @@ public class Racer {
     /**
      * @return returns whether or not a collision has occurred in the game
      */
-    private static Boolean collisonOccurs(ImageObject obj1, ImageObject obj2) {
-        Boolean ret = false;
-        if (collisionOccursCoordinates(obj1.getX(), obj1.getY(), obj1.getX() + obj1.getWidth(),
-                obj1.getY() + obj1.getyHeight(), obj1.getX(), obj2.getY(), obj2.getX() + obj2.getWidth(),
-                obj2.getY() + obj2.getyHeight())) {
-            ret = true;
-        }
-        return ret;
+    //FIXME if error exists check whether or not the other collisonOccurs method works
+    //this is the simplified version with improved syntax
+    private static boolean collisionOccurs(ImageObject obj1, ImageObject obj2) {
+        return collisionOccursCoordinates(obj1.getX(), obj1.getY(), obj1.getX() + obj1.getWidth(),
+                obj1.getY() + obj1.getyHeight(), obj2.getX(), obj2.getY(), obj2.getX() + obj2.getWidth(),
+                obj2.getY() + obj2.getyHeight());
     }
+
+
+//    private static Boolean collisionOccurs(ImageObject obj1, ImageObject obj2) {
+//        Boolean ret = false;
+//        if (collisionOccursCoordinates(obj1.getX(), obj1.getY(), obj1.getX() + obj1.getWidth(),
+//                obj1.getY() + obj1.getyHeight(), obj1.getX(), obj2.getY(), obj2.getX() + obj2.getWidth(),
+//                obj2.getY() + obj2.getyHeight())) {
+//            ret = true;
+//        }
+//        return ret;
+//    }
 
     /**
      * This class defines the ImageObject which is essentially the object that is attached
