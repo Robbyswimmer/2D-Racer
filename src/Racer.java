@@ -353,9 +353,19 @@ public class Racer {
             rotateStep = 0.03;
         }
 
+        //checks if the cars are still on the track or not
+        public static boolean inBounds(ImageObject playerCheck) {
+            return playerCheck.getX() < 1123 && playerCheck.getX() > 207 && playerCheck.getY() > 216 && playerCheck.getY() < 837;
+        }
+
         public void run() {
 
             while (!endgame) {
+
+                //moves the cars back to the start of the game if they leave the track
+                if (!inBounds(p1)) p1.moveTo(p1OriginalX, p1OriginalY);
+                if (!inBounds(p2)) p2.moveTo(p2OriginalX, p2OriginalY);
+
                 try {
                     Thread.sleep(10);
                 } catch (InterruptedException e) {
@@ -363,9 +373,9 @@ public class Racer {
                 }
 
                 //handle acceleration for player 1 and 2
-                if (upPressed && p1Velocity < maxSpeed) {
+                if (upPressed && p1Velocity < maxSpeed && inBounds(p1)) {
                     p1Velocity += velocityStep * 4;
-                } else if (wPressed && p2Velocity < maxSpeed) {
+                } else if (wPressed && p2Velocity < maxSpeed && inBounds(p2)) {
                     p2Velocity += velocityStep * 4;
                 }
 
@@ -381,9 +391,9 @@ public class Racer {
                 }
 
                 //handle braking for player 1 and 2
-                if (downPressed && p1Velocity * -1 < maxSpeed / 2)
+                if (downPressed && p1Velocity * -1 < maxSpeed / 2 && inBounds(p1))
                     p1Velocity -= velocityStep * 5;
-                else if (sPressed && p2Velocity * -1 < maxSpeed / 2) {
+                else if (sPressed && p2Velocity * -1 < maxSpeed / 2 && inBounds(p2)) {
                     p2Velocity -= velocityStep * 5;
                 }
 
@@ -612,16 +622,11 @@ public class Racer {
     private static class CollisionChecker implements Runnable {
         public void run() {
             while (!endgame) {
+
                 if (collisionOccurs(p1, p2)) {
                     System.out.println("CRASH between p1 and p2!!!!");
                     p1Velocity = 0;
                     p2Velocity = 0;
-
-                    p1.moveTo(p1OriginalX, p1OriginalY);
-                }
-
-                if (collisionOccurs(p2, p1)) {
-                    System.out.println("boop");
                 }
             }
         }
@@ -687,8 +692,6 @@ public class Racer {
     /**
      * @return returns whether or not a collision has occurred in the game
      */
-    //FIXME if error exists check whether or not the other collisonOccurs method works
-    //this is the simplified version with improved syntax
     private static boolean collisionOccurs(ImageObject obj1, ImageObject obj2) {
 
         //printing coords to check for overlapping objects
