@@ -94,6 +94,10 @@ public class Racer {
     private static AudioInputStream ais;
     private static Clip clip;
 
+    //plays the sounds of explosions when cars collide
+    private static AudioInputStream ais2;
+    private static Clip clip2;
+
     // the remaining variables at the end of the asteroids chapter have been
     // omitted because they have been deemed unnecessary at this point in development
     // this includes things like flames, explosions, asteroids, enemies, and player bullets

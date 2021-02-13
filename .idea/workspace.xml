@@ -35,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Racer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="329" column="13" lean-forward="true" selection-start-line="329" selection-start-column="13" selection-end-line="329" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="96" column="54" lean-forward="true" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,7 +128,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613258359716" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613259391442" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -190,12 +190,12 @@
       <workItem from="1612889274506" duration="313000" />
       <workItem from="1613101924058" duration="3605000" />
       <workItem from="1613170708706" duration="7795000" />
-      <workItem from="1613241785849" duration="10261000" />
+      <workItem from="1613241785849" duration="11146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22781000" />
+    <option name="totallyTimeSpent" value="23666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1891" y="34" width="1860" height="1046" extended-state="0" />
@@ -292,8 +292,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Racer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="329" column="13" lean-forward="true" selection-start-line="329" selection-start-column="13" selection-end-line="329" selection-end-column="13" />
+        <state relative-caret-position="306">
+          <caret line="96" column="54" lean-forward="true" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
