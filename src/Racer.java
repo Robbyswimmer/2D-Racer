@@ -253,7 +253,6 @@ public class Racer {
                 } catch (InterruptedException e) {
                     System.out.println("Exception caught in Animate");
                 }
-
             }
         }
     }
@@ -340,6 +339,11 @@ public class Racer {
                 clip.open(ais);
                 clip.loop(Clip.LOOP_CONTINUOUSLY);
                 clip.start();
+
+                ais2 = AudioSystem.getAudioInputStream(new File("Sounds/chiptune-explosion-.wav"));
+                clip2 = AudioSystem.getClip();
+                clip2.open(ais2);
+
             } catch (UnsupportedAudioFileException uafe) {}
             catch (IOException ioe) {}
             catch (LineUnavailableException lue) {}
@@ -405,11 +409,12 @@ public class Racer {
                     p1Velocity -= velocityStep * 3;
                 } else if (!wPressed && !sPressed && p2Velocity > 0) {
                     p2Velocity -= velocityStep * 3;
-                } else if (!upPressed && !downPressed && p1Velocity < 0) {
-                    p1Velocity += velocityStep * 3;
-                } else if (!wPressed && !sPressed && p2Velocity < 0) {
-                    p1Velocity += velocityStep * 3;
                 }
+//                } else if (!upPressed && !downPressed && p1Velocity < 0) {
+//                    p1Velocity += velocityStep * 3;
+//                } else if (!wPressed && !sPressed && p2Velocity < 0) {
+//                    p1Velocity += velocityStep * 3;
+//                }
 
                 //handle braking for player 1 and 2
                 if (downPressed && p1Velocity * -1 < maxSpeed / 2 && inBounds(p1))
@@ -646,6 +651,9 @@ public class Racer {
 
                 if (collisionOccurs(p1, p2)) {
                     System.out.println("CRASH between p1 and p2!!!!");
+                    clip2.setFramePosition(0);
+                    clip2.start();
+
                     p1Velocity = 0;
                     p2Velocity = 0;
                 }
