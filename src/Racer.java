@@ -1,5 +1,7 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
@@ -9,6 +11,7 @@ import java.awt.*;
 import java.io.*;
 import java.lang.management.RuntimeMXBean;
 import java.security.Key;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Racer {
@@ -59,6 +62,16 @@ public class Racer {
     private static JFrame appFrame;
     private static final int IFW = JComponent.WHEN_IN_FOCUSED_WINDOW;
 
+    private static int maxLaps;
+    private static int currentLap;
+
+    private static JComboBox lapList;
+
+    //these will be used to keep track of the current lap of each player,
+    //whichever player is ahead will be used to increment the current lap counter
+    private static int p1CurrentLap;
+    private static int p2CurrentLap;
+
     // the remaining variables at the end of the asteroids chapter have been
     // omitted because they have been deemed unnecessary at this point in development
     // this includes things like flames, explosions, asteroids, enemies, and player bullets
@@ -82,6 +95,9 @@ public class Racer {
         pi = Math.PI;
         twoPi = 2 * pi;
         endgame = false;
+
+        maxLaps = 3;
+        currentLap = 1;
 
         p1Height = 50;
         p1Width = 50;
@@ -114,10 +130,19 @@ public class Racer {
         JLabel thumb = new JLabel();
         thumb.setIcon(icon);
         //drawCoverBackground();
+
         //start game button
         JButton newGameButton = new JButton("New Game");
         newGameButton.addActionListener(new StartGame());
         myPanel.add(newGameButton);
+
+        //select laps drop down menu
+        Integer[] laps = new Integer[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        JLabel lapText = new JLabel("Select Laps");
+        lapList = new JComboBox(laps);
+        myPanel.add(lapText);
+        myPanel.add(lapList);
+        lapList.addActionListener(new LapListener());
 
         //quit game button
         JButton quitButton = new JButton("Quit Game");
@@ -154,6 +179,7 @@ public class Racer {
                 drawBackground();
                 drawPlayer();
                 drawClock();
+                drawSpeed();
                 try {
                     Thread.sleep(32);
                 } catch (InterruptedException e) {
@@ -163,6 +189,13 @@ public class Racer {
             }
         }
     }
+
+    private static class LapListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            maxLaps = lapList.getSelectedIndex() + 1;
+        }
+    }
+
 
     private static class StartGame implements ActionListener {
         public void actionPerformed(ActionEvent e) {
@@ -365,6 +398,7 @@ public class Racer {
     private static void drawClock() {
         Graphics g = appFrame.getGraphics();
         Graphics2D g2d = (Graphics2D) g;
+        DecimalFormat df = new DecimalFormat("##.##");
 
         //gets the current time and compares it against when execution began
         long end = System.currentTimeMillis();
@@ -379,8 +413,8 @@ public class Racer {
         g2d.drawRect(80, 75, 232, 102);
         g2d.setStroke(oldStroke);
         g2d.setFont(new Font("TimesRoman", Font.BOLD, 30));
-        g2d.drawString(sec + " seconds", 100, 120);
-        g2d.drawString("Best Lap: FIX" , 100, 150);
+        g2d.drawString(df.format(sec) + " seconds", 100, 115);
+        g2d.drawString("Laps: " + currentLap + "/" + maxLaps , 100, 155);
     }
 
     /**
@@ -392,9 +426,18 @@ public class Racer {
         Graphics g = appFrame.getGraphics();
         Graphics2D g2d = (Graphics2D) g;
 
-        g2d.fillRect(650, 120, 200, 60);
-        
+        //draw the rectangle to contain the speed text
+        g2d.setColor(Color.white);
+        g2d.fillRect(860, 75, 300, 100);
+        g2d.setColor(Color.BLACK);
+        g2d.setStroke(new BasicStroke(5));
+        g2d.drawRect(860, 75, 300, 100 );
 
+        //draw the text to display current speed
+        DecimalFormat df = new DecimalFormat("###");
+        g2d.setFont(new Font("TimesRoman", Font.BOLD, 30));
+        g2d.drawString("P1 Speed: " + df.format(p1Velocity * 100) + " MPH", 880, 115);
+        g2d.drawString("P2 Speed: " + df.format(p2Velocity * 100) + " MPH", 880, 155);
     }
 
     /**

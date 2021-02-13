@@ -35,10 +35,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Racer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="395" column="8" selection-start-line="395" selection-start-column="8" selection-end-line="395" selection-end-column="8" />
+            <state relative-caret-position="324">
+              <caret line="62" column="69" lean-forward="true" selection-start-line="62" selection-start-column="69" selection-end-line="62" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#6085#6086#0" expanded="true" />
+                <element signature="e#6144#6145#0" expanded="true" />
                 <element signature="e#6590#6591#0" expanded="true" />
                 <element signature="e#6628#6629#0" expanded="true" />
               </folding>
@@ -59,11 +61,13 @@
     <findStrings>
       <find>wrap</find>
       <find>animate</find>
-      <find>drawcl</find>
       <find>getHeight</find>
       <find>getyHeight</find>
       <find>drawclock</find>
       <find>quitgame</find>
+      <find>drawcl</find>
+      <find>drawClo</find>
+      <find>quit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,7 +127,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612320841536" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613175463924" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -184,12 +188,12 @@
       <workItem from="1612231718468" duration="1094000" />
       <workItem from="1612889274506" duration="313000" />
       <workItem from="1613101924058" duration="3605000" />
-      <workItem from="1613170708706" duration="754000" />
+      <workItem from="1613170708706" duration="4488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5479000" />
+    <option name="totallyTimeSpent" value="9213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1823" y="25" width="1497" height="967" extended-state="0" />
@@ -271,10 +275,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Racer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="395" column="8" selection-start-line="395" selection-start-column="8" selection-end-line="395" selection-end-column="8" />
+        <state relative-caret-position="324">
+          <caret line="62" column="69" lean-forward="true" selection-start-line="62" selection-start-column="69" selection-end-line="62" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6085#6086#0" expanded="true" />
+            <element signature="e#6144#6145#0" expanded="true" />
             <element signature="e#6590#6591#0" expanded="true" />
             <element signature="e#6628#6629#0" expanded="true" />
           </folding>
