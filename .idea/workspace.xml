@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="" />
+    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,12 +35,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Racer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7237">
-              <caret line="599" column="8" selection-start-line="599" selection-start-column="8" selection-end-line="599" selection-end-column="8" />
+            <state relative-caret-position="327">
+              <caret line="252" column="7" lean-forward="true" selection-start-line="252" selection-start-column="7" selection-end-line="252" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6085#6086#0" expanded="true" />
-                <element signature="e#6144#6145#0" expanded="true" />
+                <element signature="e#7332#7333#0" expanded="true" />
+                <element signature="e#7396#7397#0" expanded="true" />
                 <element signature="e#6590#6591#0" expanded="true" />
                 <element signature="e#6628#6629#0" expanded="true" />
               </folding>
@@ -125,7 +127,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613177830460" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613179401002" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -186,18 +188,18 @@
       <workItem from="1612231718468" duration="1094000" />
       <workItem from="1612889274506" duration="313000" />
       <workItem from="1613101924058" duration="3605000" />
-      <workItem from="1613170708706" duration="5341000" />
+      <workItem from="1613170708706" duration="6994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10066000" />
+    <option name="totallyTimeSpent" value="11719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="25" width="1497" height="967" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25498283" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25498283" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -206,7 +208,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49965635" visible="true" weight="0.11047181" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49965635" visible="true" weight="0.11047181" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -276,12 +278,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Racer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7237">
-          <caret line="599" column="8" selection-start-line="599" selection-start-column="8" selection-end-line="599" selection-end-column="8" />
+        <state relative-caret-position="327">
+          <caret line="252" column="7" lean-forward="true" selection-start-line="252" selection-start-column="7" selection-end-line="252" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6085#6086#0" expanded="true" />
-            <element signature="e#6144#6145#0" expanded="true" />
+            <element signature="e#7332#7333#0" expanded="true" />
+            <element signature="e#7396#7397#0" expanded="true" />
             <element signature="e#6590#6591#0" expanded="true" />
             <element signature="e#6628#6629#0" expanded="true" />
           </folding>

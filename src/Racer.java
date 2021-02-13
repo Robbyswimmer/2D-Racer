@@ -65,12 +65,22 @@ public class Racer {
     private static int maxLaps;
     private static int currentLap;
 
+    //drop down menus for selecting # laps and car to play with
     private static JComboBox lapList;
+    private static JComboBox carList;
+    private static JComboBox carList2;
 
     //these will be used to keep track of the current lap of each player,
     //whichever player is ahead will be used to increment the current lap counter
     private static int p1CurrentLap;
     private static int p2CurrentLap;
+
+    //holding variables for the car images
+    private static BufferedImage Red;
+    private static BufferedImage Blue;
+    private static BufferedImage Orange;
+    private static BufferedImage Green;
+    private static BufferedImage White;
 
     // the remaining variables at the end of the asteroids chapter have been
     // omitted because they have been deemed unnecessary at this point in development
@@ -110,8 +120,14 @@ public class Racer {
         try {
             background = ImageIO.read(new File("Images/testTrack2.png"));
             player = ImageIO.read(new File("Images/BlueCarLarge2.png"));
-            player2 = ImageIO.read(new File("Images/GreenCarLarge2.png"));
+            player2 = ImageIO.read(new File("Images/RedCarLarge2.png"));
             coverBackground = ImageIO.read(new File("Images/GraphicsCover.png"));
+
+            Blue = ImageIO.read(new File("Images/BlueCarLarge2.png"));
+            Red = ImageIO.read(new File("Images/RedCarLarge2.png"));
+            Orange = ImageIO.read(new File("Images/OrangeCarLarge2.png"));
+            Green = ImageIO.read(new File("Images/GreenCarLarge2.png"));
+            White = ImageIO.read(new File("Images/WhiteCarLarge2.png"));
 
         } catch (IOException ioe) {
             System.out.println("Find the right image you dingus");
@@ -143,6 +159,21 @@ public class Racer {
         myPanel.add(lapText);
         myPanel.add(lapList);
         lapList.addActionListener(new LapListener());
+
+        //select car player 1 drop down
+        String[] cars = new String[] {"Red", "Blue", "Orange", "Green", "White"};
+        JLabel carText1 = new JLabel("P1 Car");
+        carList = new JComboBox(cars);
+        myPanel.add(carText1);
+        myPanel.add(carList);
+        carList.addActionListener(new CarListener1());
+
+        //select car player 2 drop down
+        JLabel carText2 = new JLabel("P2 Car");
+        carList2 = new JComboBox(cars);
+        myPanel.add(carText2);
+        myPanel.add(carList2);
+        carList2.addActionListener(new CarListener2());
 
         //quit game button
         JButton quitButton = new JButton("Quit Game");
@@ -190,12 +221,54 @@ public class Racer {
         }
     }
 
+    /**
+     * detects if a player changes the number of laps from the dropdown
+     */
     private static class LapListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             maxLaps = lapList.getSelectedIndex() + 1;
         }
     }
 
+    /**
+     * detects if player 1 changes their car
+     */
+    private static class CarListener1 implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+
+            int n = carList.getSelectedIndex();
+            if (n == 0)
+                player = Red;
+            else if (n == 1)
+                player = Blue;
+            else if (n == 2)
+                player = Orange;
+            else if (n == 3)
+                player = Green;
+            else
+                player = White;
+        }
+    }
+
+    /**
+     * detects if player 2 changes their car
+     */
+    private static class CarListener2 implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+
+            int n = carList2.getSelectedIndex();
+            if (n == 0)
+                player2 = Red;
+            else if (n == 1)
+                player2 = Blue;
+            else if (n == 2)
+                player2 = Orange;
+            else if (n == 3)
+                player2 = Green;
+            else
+                player2 = White;
+        }
+    }
 
     private static class StartGame implements ActionListener {
         public void actionPerformed(ActionEvent e) {
