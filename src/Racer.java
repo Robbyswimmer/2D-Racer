@@ -97,6 +97,7 @@ public class Racer {
     //plays the sounds of explosions when cars collide
     private static AudioInputStream ais2;
     private static Clip clip2;
+    private static Image image;
 
     // the remaining variables at the end of the asteroids chapter have been
     // omitted because they have been deemed unnecessary at this point in development
@@ -178,11 +179,7 @@ public class Racer {
         appFrame.setSize(1320, 937);
 
         JPanel myPanel = new JPanel();
-
-        ImageIcon icon = new ImageIcon("Images/GraphicsCover.png");
-        JLabel thumb = new JLabel();
-        thumb.setIcon(icon);
-        //drawCoverBackground();
+        Cover();
 
         //start game button
         JButton newGameButton = new JButton("New Game");
@@ -234,6 +231,36 @@ public class Racer {
         appFrame.setVisible(true);
     }
 
+    /**
+     * This is the class for loading the cover page
+     * aka start-up screen
+     * Uses JPanel as a container and the ImageIcon to hols the image
+     */
+    public static void Cover() {
+        image = new ImageIcon("Images/GraphicsCover.png").getImage();
+
+        JPanel container = new MyBackground();
+        appFrame.add(container);
+        appFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        appFrame.setSize(1320, 937);
+        appFrame.setVisible(true);
+    }
+
+    public static class MyBackground extends JPanel {
+
+        public MyBackground() {
+            setBackground(new Color(0, true));
+        }
+
+        @Override
+        public void paintComponent(Graphics g) {
+            //Paint background first
+            g.drawImage (image, 0, 0, getWidth (), getHeight (), this);
+
+            //Paint the rest of the component. Children and self etc.
+            super.paintComponent(g);
+        }
+    }
     /**
      * Responsible for drawing the images – dynamic and static –
      * that can be seen in the game
@@ -620,16 +647,6 @@ public class Racer {
     private static AffineTransformOp rotateImageObject(ImageObject obj) {
         AffineTransform at = AffineTransform.getRotateInstance(-obj.getAngle(), obj.getWidth() / 2.0, obj.getyHeight() / 2.0);
         return new AffineTransformOp(at, AffineTransformOp.TYPE_BILINEAR);
-    }
-
-    /**
-     * Should draw the player startup screen
-     */
-    //FIXME does not work currently
-    private static void drawCoverBackground() {
-        Graphics g = appFrame.getGraphics();
-        Graphics2D g2D = (Graphics2D) g;
-        g2D.drawImage(coverBackground, xOffset, yOffset, null);
     }
 
     /**
