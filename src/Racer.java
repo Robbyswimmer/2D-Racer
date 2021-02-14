@@ -97,6 +97,7 @@ public class Racer {
     //plays the sounds of explosions when cars collide
     private static AudioInputStream ais2;
     private static Clip clip2;
+    private static Image image;
 
     // the remaining variables at the end of the asteroids chapter have been
     // omitted because they have been deemed unnecessary at this point in development
@@ -178,11 +179,7 @@ public class Racer {
         appFrame.setSize(1320, 937);
 
         JPanel myPanel = new JPanel();
-
-        ImageIcon icon = new ImageIcon("Images/GraphicsCover.png");
-        JLabel thumb = new JLabel();
-        thumb.setIcon(icon);
-        //drawCoverBackground();
+        Cover();
 
         //start game button
         JButton newGameButton = new JButton("New Game");
@@ -190,7 +187,7 @@ public class Racer {
         myPanel.add(newGameButton);
 
         //select laps drop down menu
-        Integer[] laps = new Integer[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        Integer[] laps = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         JLabel lapText = new JLabel("Select Laps");
         lapList = new JComboBox(laps);
         myPanel.add(lapText);
@@ -198,7 +195,7 @@ public class Racer {
         lapList.addActionListener(new LapListener());
 
         //select car player 1 drop down
-        String[] cars = new String[] {"Red", "Blue", "Orange", "Green", "White"};
+        String[] cars = new String[]{"Red", "Blue", "Orange", "Green", "White"};
         JLabel carText1 = new JLabel("P1 Car");
         carList = new JComboBox(cars);
         myPanel.add(carText1);
@@ -235,6 +232,37 @@ public class Racer {
     }
 
     /**
+     * This is the class for loading the cover page
+     * aka start-up screen
+     * Uses JPanel as a container and the ImageIcon to hols the image
+     */
+    public static void Cover() {
+        image = new ImageIcon("Images/GraphicsCover.png").getImage();
+
+        JPanel container = new MyBackground();
+        appFrame.add(container);
+        appFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        appFrame.setSize(1320, 937);
+        appFrame.setVisible(true);
+    }
+
+    public static class MyBackground extends JPanel {
+
+        public MyBackground() {
+            setBackground(new Color(0, true));
+        }
+
+        @Override
+        public void paintComponent(Graphics g) {
+            //Paint background first
+            g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
+
+            //Paint the rest of the component. Children and self etc.
+            super.paintComponent(g);
+        }
+    }
+
+    /**
      * Responsible for drawing the images – dynamic and static –
      * that can be seen in the game
      */
@@ -249,7 +277,7 @@ public class Racer {
                 drawClock();
                 drawSpeed();
                 try {
-                    Thread.sleep(32);
+                    Thread.sleep(100);
                 } catch (InterruptedException e) {
                     System.out.println("Exception caught in Animate");
                 }
@@ -344,9 +372,10 @@ public class Racer {
                 clip2 = AudioSystem.getClip();
                 clip2.open(ais2);
 
-            } catch (UnsupportedAudioFileException uafe) {}
-            catch (IOException ioe) {}
-            catch (LineUnavailableException lue) {}
+            } catch (UnsupportedAudioFileException uafe) {
+            } catch (IOException ioe) {
+            } catch (LineUnavailableException lue) {
+            }
 
             endgame = false;
             Thread t1 = new Thread(new Animate());
@@ -383,13 +412,28 @@ public class Racer {
             return playerCheck.getX() < 1123 && playerCheck.getX() > 207 && playerCheck.getY() > 216 && playerCheck.getY() < 837;
         }
 
+        // Checks to see if the players are in the inner grass area
+        public static boolean inBoundsInner(ImageObject playerCheck) {
+            return playerCheck.getX() < 970 && playerCheck.getX() > 375 && playerCheck.getY() > 375 && playerCheck.getY() < 670;
+        }
+
+        // Checks to see if the players hit blue tent
+        public static boolean hitBlueTent(ImageObject playerCheck) {
+            return playerCheck.getX() > 445 && playerCheck.getX() < 815 && playerCheck.getY() > 28 && playerCheck.getY() < 175;
+        }
+
+//        public static boolean hitBrownHouse(ImageObject playerCheck){
+//            return playerCheck.getX() > # && playerCheck.getX() < # && playerCheck.getY() > # && playerCheck.getY() < #;
+//        }
+
+
+          public static boolean hitEndOfMap(ImageObject playerCheck){
+            return playerCheck.getX() > 1318 && playerCheck.getX() < 1 && playerCheck.getY() > 936 && playerCheck.getY() < 1;
+        }
+
         public void run() {
 
             while (!endgame) {
-
-                //moves the cars back to the start of the game if they leave the track
-                if (!inBounds(p1)) p1.moveTo(p1OriginalX, p1OriginalY);
-                if (!inBounds(p2)) p2.moveTo(p2OriginalX, p2OriginalY);
 
                 try {
                     Thread.sleep(10);
@@ -404,17 +448,50 @@ public class Racer {
                     p2Velocity += velocityStep * 4;
                 }
 
+                // This slows down players outside of track.
+                //FIXME: is this correct math? lol
+                if (upPressed && !inBounds(p1)) {
+                    p1Velocity = (double) maxSpeed * 0.8;
+                } else if (wPressed && !inBounds(p2)) {
+                    p2Velocity = (double) maxSpeed * 0.8;
+                }
+
+                // This slows down players inside of the inner grass area of the track.
+                // Made this very drastic in case of cheating.
+                if (upPressed && inBoundsInner(p1)) {
+                    p1Velocity = (double) maxSpeed * 0.08;
+                } else if (wPressed && inBoundsInner(p2)) {
+                    p2Velocity = (double) maxSpeed * 0.08;
+                }
+
+                // Bouncing affect when player hits a building to avoid having player stuck on wall.
+                if (hitBlueTent(p1)) {
+                    p1Velocity = 0;
+                    p1Velocity -= velocityStep * 100;
+                } else if (hitBlueTent(p2)) {
+                    p2Velocity = 0;
+                    p2Velocity -= velocityStep * 100;
+                }
+
+                //FIXME: This is not working...worked for the blue tent but not working for border for some reason...
+                if(hitEndOfMap(p1)){
+                    p1Velocity = 0;
+                }
+
+
                 //handle air braking – slowing naturally because no acceleration
                 if (!upPressed && !downPressed && p1Velocity > 0) {
                     p1Velocity -= velocityStep * 3;
                 } else if (!wPressed && !sPressed && p2Velocity > 0) {
                     p2Velocity -= velocityStep * 3;
                 }
-//                } else if (!upPressed && !downPressed && p1Velocity < 0) {
-//                    p1Velocity += velocityStep * 3;
-//                } else if (!wPressed && !sPressed && p2Velocity < 0) {
-//                    p1Velocity += velocityStep * 3;
-//                }
+
+                // Speeds the players back up after being stopped.
+                if (upPressed && downPressed && p1Velocity < 0) {
+                    p1Velocity += velocityStep * 3;
+                } else if (wPressed && sPressed && p2Velocity < 0) {
+                    p2Velocity += velocityStep * 3;
+                }
 
                 //handle braking for player 1 and 2
                 if (downPressed && p1Velocity * -1 < maxSpeed / 2 && inBounds(p1))
@@ -526,8 +603,9 @@ public class Racer {
 
     /**
      * Method responsible for binding the keyboard keys to the game
+     *
      * @param myPanel imports the game panel
-     * @param input represents the given keyboard input as a string
+     * @param input   represents the given keyboard input as a string
      */
     private static void bindKey(JPanel myPanel, String input) {
         System.out.println("Key bound");
@@ -561,7 +639,7 @@ public class Racer {
         g2d.setStroke(oldStroke);
         g2d.setFont(new Font("TimesRoman", Font.BOLD, 30));
         g2d.drawString(df.format(sec) + " seconds", 100, 115);
-        g2d.drawString("Laps: " + currentLap + "/" + maxLaps , 100, 155);
+        g2d.drawString("Laps: " + currentLap + "/" + maxLaps, 100, 155);
     }
 
     /**
@@ -578,7 +656,7 @@ public class Racer {
         g2d.fillRect(860, 75, 300, 100);
         g2d.setColor(Color.BLACK);
         g2d.setStroke(new BasicStroke(5));
-        g2d.drawRect(860, 75, 300, 100 );
+        g2d.drawRect(860, 75, 300, 100);
 
         //draw the text to display current speed
         DecimalFormat df = new DecimalFormat("###");
@@ -614,22 +692,13 @@ public class Racer {
     /**
      * Responsible for rotating the object attached to the player image
      * so that it can track movement accurately
+     *
      * @param obj the given image that is being rotated
      * @return returns the transformation applied to the image object
      */
     private static AffineTransformOp rotateImageObject(ImageObject obj) {
         AffineTransform at = AffineTransform.getRotateInstance(-obj.getAngle(), obj.getWidth() / 2.0, obj.getyHeight() / 2.0);
         return new AffineTransformOp(at, AffineTransformOp.TYPE_BILINEAR);
-    }
-
-    /**
-     * Should draw the player startup screen
-     */
-    //FIXME does not work currently
-    private static void drawCoverBackground() {
-        Graphics g = appFrame.getGraphics();
-        Graphics2D g2D = (Graphics2D) g;
-        g2D.drawImage(coverBackground, xOffset, yOffset, null);
     }
 
     /**

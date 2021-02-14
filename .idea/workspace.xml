@@ -19,15 +19,35 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+=======
+    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="changed threads to work smoothly">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$CarListener1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$CarListener1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$CarListener2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$CarListener2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$LapListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$LapListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$QuitGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$QuitGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
+    </list>
+>>>>>>> aebdfcbf6688568648e633e14ea82396f83f8c4e
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
@@ -44,6 +64,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> aebdfcbf6688568648e633e14ea82396f83f8c4e
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -51,73 +73,11 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>wrap</find>
-      <find>animate</find>
-      <find>getHeight</find>
-      <find>getyHeight</find>
-      <find>drawclock</find>
-      <find>quitgame</find>
-      <find>drawcl</find>
-      <find>drawClo</find>
-      <find>quit</find>
-      <find>drawspe</find>
-      <find>maxSpeed</find>
-      <find>startGame</find>
-      <find>drawPlayer</find>
-      <find>move</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/Racer.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1891" />
-    <option name="y" value="34" />
-    <option name="width" value="1860" />
-    <option name="height" value="1046" />
-  </component>
   <component name="ProjectId" id="1nlgBZrnu45D6PNOetLT5osWkxH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="2D Racer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2D Racer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2D Racer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2D Racer" type="462c0819:PsiDirectoryNode" />
-              <item name="Sounds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2D Racer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2D Racer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -126,6 +86,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613260689451" />
   </component>
   <component name="RunDashboard">
@@ -139,6 +100,10 @@
         </RuleState>
       </list>
     </option>
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613260656143" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> aebdfcbf6688568648e633e14ea82396f83f8c4e
   </component>
   <component name="RunManager" selected="Application.Racer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -169,7 +134,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -188,10 +153,24 @@
       <workItem from="1612889274506" duration="313000" />
       <workItem from="1613101924058" duration="3605000" />
       <workItem from="1613170708706" duration="7795000" />
+<<<<<<< HEAD
       <workItem from="1613241785849" duration="12460000" />
+=======
+      <workItem from="1613241785849" duration="12401000" />
+      <workItem from="1613272832034" duration="8258000" />
     </task>
+    <task id="LOCAL-00001" summary="changed threads to work smoothly">
+      <created>1613275299539</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613275299539</updated>
+>>>>>>> aebdfcbf6688568648e633e14ea82396f83f8c4e
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="24980000" />
   </component>
@@ -229,22 +208,17 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
+=======
+>>>>>>> aebdfcbf6688568648e633e14ea82396f83f8c4e
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -263,7 +237,9 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -297,5 +273,10 @@
         </state>
       </provider>
     </entry>
+=======
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changed threads to work smoothly" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed threads to work smoothly" />
+>>>>>>> aebdfcbf6688568648e633e14ea82396f83f8c4e
   </component>
 </project>
