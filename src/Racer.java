@@ -249,7 +249,7 @@ public class Racer {
                 drawClock();
                 drawSpeed();
                 try {
-                    Thread.sleep(32);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     System.out.println("Exception caught in Animate");
                 }
