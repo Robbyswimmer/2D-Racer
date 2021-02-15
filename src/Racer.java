@@ -423,7 +423,7 @@ public class Racer {
         }
 
         public static boolean hitBrownHouse(ImageObject playerCheck){
-            return playerCheck.getX() > 206 && playerCheck.getX() < -9 && playerCheck.getY() > 185 && playerCheck.getY() < 325;
+            return playerCheck.getX() < 209 && playerCheck.getX() > -9 && playerCheck.getY() > 190 && playerCheck.getY() < 420;
         }
 
 
@@ -809,7 +809,7 @@ public class Racer {
 
         //limit the amount of input being printed out
         try {
-            Thread.sleep(1000);
+            Thread.sleep(800);
         } catch (InterruptedException ie) {
             System.out.println("ie");
         }

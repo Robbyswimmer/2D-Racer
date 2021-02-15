@@ -19,14 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="workspace.xml fixed for my computer">
+    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="tried to implement brown house bouncing off">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,6 +102,7 @@
       <workItem from="1613170708706" duration="7795000" />
       <workItem from="1613241785849" duration="12401000" />
       <workItem from="1613272832034" duration="8258000" />
+      <workItem from="1613354476027" duration="2343000" />
     </task>
     <task id="LOCAL-00001" summary="changed threads to work smoothly">
       <created>1613275299539</created>
@@ -123,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613343288981</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tried to implement brown house bouncing off">
+      <created>1613349087783</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613349087783</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,28 +160,29 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed threads to work smoothly" />
     <MESSAGE value="workspace.xml fixed for my computer" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml fixed for my computer" />
+    <MESSAGE value="tried to implement brown house bouncing off" />
+    <option name="LAST_COMMIT_MESSAGE" value="tried to implement brown house bouncing off" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1613348959015">
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1613356847471">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1034@0.25.1792.1034" timestamp="1613348959015" />
-    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1613348959014">
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1034@0.25.1792.1034" timestamp="1613356847471" />
+    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1613356847470">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1034@0.25.1792.1034" timestamp="1613348959014" />
-    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1613348959014">
+    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1034@0.25.1792.1034" timestamp="1613356847470" />
+    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1613356847469">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1034@0.25.1792.1034" timestamp="1613348959014" />
-    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1613348959015">
+    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1034@0.25.1792.1034" timestamp="1613356847469" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1613356847471">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1034@0.25.1792.1034" timestamp="1613348959015" />
-    <state x="496" y="279" key="Vcs.Push.Dialog.v2" timestamp="1613343292957">
+    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1034@0.25.1792.1034" timestamp="1613356847471" />
+    <state x="496" y="279" key="Vcs.Push.Dialog.v2" timestamp="1613349093546">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state x="496" y="279" key="Vcs.Push.Dialog.v2/0.25.1792.1034@0.25.1792.1034" timestamp="1613343292957" />
+    <state x="496" y="279" key="Vcs.Push.Dialog.v2/0.25.1792.1034@0.25.1792.1034" timestamp="1613349093546" />
   </component>
 </project>
