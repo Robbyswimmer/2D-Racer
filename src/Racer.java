@@ -422,9 +422,9 @@ public class Racer {
             return playerCheck.getX() > 445 && playerCheck.getX() < 815 && playerCheck.getY() > 28 && playerCheck.getY() < 175;
         }
 
-//        public static boolean hitBrownHouse(ImageObject playerCheck){
-//            return playerCheck.getX() > # && playerCheck.getX() < # && playerCheck.getY() > # && playerCheck.getY() < #;
-//        }
+        public static boolean hitBrownHouse(ImageObject playerCheck){
+            return playerCheck.getX() > 206 && playerCheck.getX() < -9 && playerCheck.getY() > 185 && playerCheck.getY() < 325;
+        }
 
 
           public static boolean hitEndOfMap(ImageObject playerCheck){
@@ -469,6 +469,15 @@ public class Racer {
                     p1Velocity = 0;
                     p1Velocity -= velocityStep * 100;
                 } else if (hitBlueTent(p2)) {
+                    p2Velocity = 0;
+                    p2Velocity -= velocityStep * 100;
+                }
+
+                // Bouncing affect when player hits a building to avoid having player stuck on wall.
+                if (hitBrownHouse(p1)) {
+                    p1Velocity = 0;
+                    p1Velocity -= velocityStep * 100;
+                } else if (hitBrownHouse(p2)) {
                     p2Velocity = 0;
                     p2Velocity -= velocityStep * 100;
                 }

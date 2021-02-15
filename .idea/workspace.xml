@@ -19,19 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="changed threads to work smoothly">
+    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="workspace.xml fixed for my computer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$CarListener1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$CarListener1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$CarListener2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$CarListener2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$LapListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$LapListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$QuitGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$QuitGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
     </list>
@@ -62,6 +56,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613260656143" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager" selected="Application.Racer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -92,7 +87,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -121,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613275299539</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="workspace.xml fixed for my computer">
+      <created>1613343288981</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613343288981</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +157,29 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed threads to work smoothly" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed threads to work smoothly" />
+    <MESSAGE value="workspace.xml fixed for my computer" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml fixed for my computer" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1613348959015">
+      <screen x="0" y="25" width="1792" height="1034" />
+    </state>
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1034@0.25.1792.1034" timestamp="1613348959015" />
+    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1613348959014">
+      <screen x="0" y="25" width="1792" height="1034" />
+    </state>
+    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1034@0.25.1792.1034" timestamp="1613348959014" />
+    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1613348959014">
+      <screen x="0" y="25" width="1792" height="1034" />
+    </state>
+    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1034@0.25.1792.1034" timestamp="1613348959014" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1613348959015">
+      <screen x="0" y="25" width="1792" height="1034" />
+    </state>
+    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1034@0.25.1792.1034" timestamp="1613348959015" />
+    <state x="496" y="279" key="Vcs.Push.Dialog.v2" timestamp="1613343292957">
+      <screen x="0" y="25" width="1792" height="1034" />
+    </state>
+    <state x="496" y="279" key="Vcs.Push.Dialog.v2/0.25.1792.1034@0.25.1792.1034" timestamp="1613343292957" />
   </component>
 </project>
