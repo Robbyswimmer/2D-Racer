@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="tried to implement brown house bouncing off">
+    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="almost done with brown house bouncing off">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +104,7 @@
       <workItem from="1613170708706" duration="7795000" />
       <workItem from="1613241785849" duration="12401000" />
       <workItem from="1613272832034" duration="8258000" />
-      <workItem from="1613354476027" duration="2343000" />
+      <workItem from="1613354476027" duration="3147000" />
     </task>
     <task id="LOCAL-00001" summary="changed threads to work smoothly">
       <created>1613275299539</created>
@@ -125,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613349087783</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="almost done with brown house bouncing off">
+      <created>1613357360815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613357360815</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,28 +170,33 @@
     <MESSAGE value="changed threads to work smoothly" />
     <MESSAGE value="workspace.xml fixed for my computer" />
     <MESSAGE value="tried to implement brown house bouncing off" />
-    <option name="LAST_COMMIT_MESSAGE" value="tried to implement brown house bouncing off" />
+    <MESSAGE value="almost done with brown house bouncing off" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done with brown house bouncing off" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1613356847471">
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1613368177846">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1034@0.25.1792.1034" timestamp="1613356847471" />
-    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1613356847470">
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1034@0.25.1792.1034" timestamp="1613368177846" />
+    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1613368177845">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1034@0.25.1792.1034" timestamp="1613356847470" />
-    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1613356847469">
+    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1034@0.25.1792.1034" timestamp="1613368177845" />
+    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1613368177844">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1034@0.25.1792.1034" timestamp="1613356847469" />
-    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1613356847471">
+    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1034@0.25.1792.1034" timestamp="1613368177844" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1613368177845">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1034@0.25.1792.1034" timestamp="1613356847471" />
-    <state x="496" y="279" key="Vcs.Push.Dialog.v2" timestamp="1613349093546">
+    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1034@0.25.1792.1034" timestamp="1613368177845" />
+    <state x="496" y="279" key="Vcs.Push.Dialog.v2" timestamp="1613357366148">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state x="496" y="279" key="Vcs.Push.Dialog.v2/0.25.1792.1034@0.25.1792.1034" timestamp="1613349093546" />
+    <state x="496" y="279" key="Vcs.Push.Dialog.v2/0.25.1792.1034@0.25.1792.1034" timestamp="1613357366148" />
+    <state x="687" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613367909579">
+      <screen x="0" y="25" width="1792" height="1034" />
+    </state>
+    <state x="687" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1792.1034@0.25.1792.1034" timestamp="1613367909579" />
   </component>
 </project>

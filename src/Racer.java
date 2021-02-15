@@ -423,7 +423,7 @@ public class Racer {
         }
 
         public static boolean hitBrownHouse(ImageObject playerCheck){
-            return playerCheck.getX() < 209 && playerCheck.getX() > -9 && playerCheck.getY() > 190 && playerCheck.getY() < 420;
+            return playerCheck.getX() < 205 && playerCheck.getX() > -9 && playerCheck.getY() > 190 && playerCheck.getY() < 420;
         }
 
 
