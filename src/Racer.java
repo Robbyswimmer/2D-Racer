@@ -715,14 +715,26 @@ public class Racer {
     private static class CollisionChecker implements Runnable {
         public void run() {
             while (!endgame) {
-
+                //FIXME how do I get them to stop moving backwards??
                 if (collisionOccurs(p1, p2)) {
                     System.out.println("CRASH between p1 and p2!!!!");
                     clip2.setFramePosition(0);
                     clip2.start();
 
-                    p1Velocity = 0;
-                    p2Velocity = 0;
+                    if(p1Velocity != 0) {
+                        p1Velocity = 0;
+                        p1Velocity -= .01 * 100;
+                    } else {
+                        p1Velocity = 0;
+                        p1Velocity -= .01 * 2;
+                    }
+                    if(p2Velocity != 0) {
+                        p2Velocity = 0;
+                        p2Velocity -= .01 * 100;
+                    } else {
+                        p2Velocity = 0;
+                        p2Velocity -= .01 * 2;
+                    }
                 }
             }
         }
@@ -733,19 +745,19 @@ public class Racer {
      */
     private static Boolean isInside(double p1x, double p1y, double p2x1, double p2y1, double p2x2, double p2y2) {
         Boolean ret = false;
-        if (p1x > p2x1 && p1x < p2x2) {
+        if (p1x >= p2x1 && p1x <= p2x2) {
             if (p1y > p2y1 && p1y < p2y2) {
                 ret = true;
             }
-            if (p1y > p2y2 && p1y < p2y1) {
+            if (p1y >= p2y2 && p1y <= p2y1) {
                 ret = true;
             }
         }
-        if (p1x > p2x2 && p1x < p2x1) {
+        if (p1x >= p2x2 && p1x <= p2x1) {
             if (p1y > p2y1 && p1y < p2y2) {
                 ret = true;
             }
-            if (p1y > p2y2 && p1y < p2y1) {
+            if (p1y >= p2y2 && p1y <= p2y1) {
                 ret = true;
             }
         }
