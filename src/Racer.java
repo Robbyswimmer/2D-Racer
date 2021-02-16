@@ -432,7 +432,7 @@ public class Racer {
         }
 
           public static boolean hitEndOfMap(ImageObject playerCheck) {
-            return playerCheck.getX() >= 1318 || playerCheck.getX() <= 10 || playerCheck.getY() >= 920 || playerCheck.getY() <= 15;
+            return playerCheck.getX() >= 1310 || playerCheck.getX() <= 10 || playerCheck.getY() >= 920 || playerCheck.getY() <= 15;
         }
 
         public void run() {

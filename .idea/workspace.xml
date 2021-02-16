@@ -20,14 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="almost done with brown house bouncing off">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$QuitGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$QuitGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Racer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="438" lean-forward="true" selection-start-line="438" selection-end-line="438" />
+            <state relative-caret-position="419">
+              <caret line="437" column="27" lean-forward="true" selection-start-line="437" selection-start-column="27" selection-end-line="437" selection-end-column="27" />
               <folding>
                 <element signature="e#19504#19505#0" expanded="true" />
                 <element signature="e#19539#19540#0" expanded="true" />
@@ -227,7 +219,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2148000" />
+    <option name="totallyTimeSpent" value="2289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="92" y="25" width="1497" height="967" extended-state="0" />
@@ -248,7 +240,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46260068" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1150748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -335,8 +327,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Racer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="438" lean-forward="true" selection-start-line="438" selection-end-line="438" />
+        <state relative-caret-position="419">
+          <caret line="437" column="27" lean-forward="true" selection-start-line="437" selection-start-column="27" selection-end-line="437" selection-end-column="27" />
           <folding>
             <element signature="e#19504#19505#0" expanded="true" />
             <element signature="e#19539#19540#0" expanded="true" />
