@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="almost done with brown house bouncing off">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Racer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="140" column="78" lean-forward="true" selection-start-line="140" selection-start-column="78" selection-end-line="140" selection-end-column="78" />
+            <state relative-caret-position="251">
+              <caret line="727" column="9" lean-forward="true" selection-start-line="727" selection-start-column="9" selection-end-line="727" selection-end-column="9" />
               <folding>
                 <element signature="e#19504#19505#0" expanded="true" />
                 <element signature="e#19539#19540#0" expanded="true" />
@@ -223,7 +221,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3092000" />
+    <option name="totallyTimeSpent" value="3378000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="92" y="25" width="1497" height="967" extended-state="0" />
@@ -331,8 +329,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Racer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="140" column="78" lean-forward="true" selection-start-line="140" selection-start-column="78" selection-end-line="140" selection-end-column="78" />
+        <state relative-caret-position="251">
+          <caret line="727" column="9" lean-forward="true" selection-start-line="727" selection-start-column="9" selection-end-line="727" selection-end-column="9" />
           <folding>
             <element signature="e#19504#19505#0" expanded="true" />
             <element signature="e#19539#19540#0" expanded="true" />

@@ -477,11 +477,6 @@ public class Racer {
                     p2Velocity -= velocityStep * 100;
                 }
 
-                //FIXME: This is not working...worked for the blue tent but not working for border for some reason...
-//                if(hitEndOfMap(p1)){
-//                    p1Velocity = 0;
-//                }
-
                 //handle air braking – slowing naturally because no acceleration
                 if (!upPressed && !downPressed && p1Velocity > 0) {
                     p1Velocity -= velocityStep * 3;
