@@ -721,10 +721,20 @@ public class Racer {
                     clip2.setFramePosition(0);
                     clip2.start();
 
-                    p1Velocity = 0;
-                    p1Velocity -= .01 * 100;
-                    p2Velocity = 0;
-                    p2Velocity -= .01 * 100;
+                    if(p1Velocity != 0) {
+                        p1Velocity = 0;
+                        p1Velocity -= .01 * 100;
+                    } else {
+                        p1Velocity = 0;
+                        p1Velocity -= .01 * 2;
+                    }
+                    if(p2Velocity != 0) {
+                        p2Velocity = 0;
+                        p2Velocity -= .01 * 100;
+                    } else {
+                        p2Velocity = 0;
+                        p2Velocity -= .01 * 2;
+                    }
 //                    p1Velocity -= .01;
 //                    p2Velocity -= .01;
                 }
