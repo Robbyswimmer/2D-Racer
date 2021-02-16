@@ -77,8 +77,8 @@ public class Racer {
 
     //these will be used to keep track of the current lap of each player,
     //whichever player is ahead will be used to increment the current lap counter
-    private static int p1CurrentLap;
-    private static int p2CurrentLap;
+    private static int p1CurrentLap = 1;
+    private static int p2CurrentLap = 1;
 
     //holding variables for the car images
     private static BufferedImage Red;
@@ -276,6 +276,19 @@ public class Racer {
                 drawPlayer();
                 drawClock();
                 drawSpeed();
+
+                if (p1CurrentLap >= maxLaps + 1) {
+                    drawWinner("Player 1");
+                    endgame = true;
+                    clip.close();
+                    clip2.close();
+                } else if (p2CurrentLap >= maxLaps + 1) {
+                    drawWinner("Player 2");
+                    endgame = true;
+                    clip.close();
+                    clip2.close();
+                }
+
                 try {
                     Thread.sleep(100);
                 } catch (InterruptedException e) {
@@ -283,6 +296,15 @@ public class Racer {
                 }
             }
         }
+    }
+
+    private static void drawWinner(String winningPlayer) {
+        Graphics g = appFrame.getGraphics();
+        Graphics2D g2d = (Graphics2D) g;
+
+        g.setColor(Color.red);
+        g2d.setFont(new Font("TimesRoman", Font.BOLD, 120));
+        g2d.drawString(winningPlayer + " won!", 400, 450);
     }
 
     /**
@@ -381,6 +403,7 @@ public class Racer {
             Thread t1 = new Thread(new Animate());
             Thread t2 = new Thread(new PlayerMover());
             Thread t3 = new Thread(new CollisionChecker());
+            Thread t4 = new Thread(new WinChecker());
             t1.start();
             t2.start();
             t3.start();
@@ -394,6 +417,25 @@ public class Racer {
         public void actionPerformed(ActionEvent e) {
             endgame = true;
             clip.stop();
+        }
+    }
+
+    private static class WinChecker implements Runnable {
+        public void run() {
+            if (p1CurrentLap >= maxLaps + 1) {
+                drawWinner("Player 1");
+            } else if (p2CurrentLap >= maxLaps + 1) {
+                drawWinner("Player 2");
+            }
+        }
+
+        private static void drawWinner(String winningPlayer) {
+            Graphics g = appFrame.getGraphics();
+            Graphics2D g2d = (Graphics2D) g;
+
+            g.setColor(Color.red);
+            g2d.setFont(new Font("TimesRoman", Font.BOLD, 60));
+            g2d.drawString(winningPlayer + " won!", 650, 450);
         }
     }
 
@@ -443,9 +485,20 @@ public class Racer {
             return playerCheck.getX() >= 1310 || playerCheck.getX() <= 10 || playerCheck.getY() >= 920 || playerCheck.getY() <= 15;
         }
 
+        public static boolean passedLap(ImageObject playerCheck) {
+            return playerCheck.getX() >= 1000 && playerCheck.getX() <= 1130 && playerCheck.getY() >= 560 && playerCheck.getY() <= 570;
+        }
+
+        public static boolean passedMidLap(ImageObject playerCheck) {
+            return playerCheck.getX() >= 270 && playerCheck.getX() <= 370 && playerCheck.getY() >= 560 && playerCheck.getY() <= 570;
+        }
+
         public void run() {
 
             while (!endgame) {
+
+                if (passedLap(p1)) p1CurrentLap += 1;
+                if (passedLap(p2)) p2CurrentLap += 1;
 
                 try {
                     Thread.sleep(10);
@@ -644,14 +697,16 @@ public class Racer {
 
         //sets the brush, color, and draws the strings / shapes for the clock
         g2d.setColor(Color.WHITE);
-        g2d.fillRect(80, 75, 230, 100);
+        g2d.fillRect(80, 75, 260, 130);
+
         g2d.setColor(Color.black);
         g2d.setStroke(new BasicStroke(5));
-        g2d.drawRect(80, 75, 232, 102);
+        g2d.drawRect(80, 75, 260, 130);
         g2d.setStroke(oldStroke);
         g2d.setFont(new Font("TimesRoman", Font.BOLD, 30));
         g2d.drawString(df.format(sec) + " seconds", 100, 115);
-        g2d.drawString("Laps: " + currentLap + "/" + maxLaps, 100, 155);
+        g2d.drawString("Player 1 Laps: " + p1CurrentLap + "/" + maxLaps, 95, 155);
+        g2d.drawString("Player 2 Laps: " + p2CurrentLap + "/" + maxLaps, 95, 195);
     }
 
     /**
