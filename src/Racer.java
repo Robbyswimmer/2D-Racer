@@ -408,6 +408,14 @@ public class Racer {
             rotateStep = 0.03;
         }
 
+        private void changeVelocity(double playerVelocity) {
+            if(playerVelocity > 0) {
+                velocityStep -= 1;
+            } else {
+                velocityStep += 1;
+            }
+        }
+
         //checks if the cars are still on the track or not
         public static boolean inBounds(ImageObject playerCheck) {
             return playerCheck.getX() < 1123 && playerCheck.getX() > 207 && playerCheck.getY() > 216 && playerCheck.getY() < 837;
@@ -527,6 +535,12 @@ public class Racer {
                     else
                         p2.rotate(-rotateStep);
                 }
+
+                //handle collisions between the two players
+//                if (collisionOccurs(p1, p2)) {
+//                    changeVelocity(p1Velocity);
+//                    changeVelocity(p2Velocity);
+//                }
 
                 p1.move(-p1Velocity * Math.cos(p1.getAngle() - pi / 2.0), p1Velocity * Math.sin(p1.getAngle() - pi / 2.0));
                 p2.move(-p2Velocity * Math.cos(p2.getAngle() - pi / 2.0), p2Velocity * Math.sin(p2.getAngle() - pi / 2.0));
@@ -721,21 +735,20 @@ public class Racer {
                     clip2.setFramePosition(0);
                     clip2.start();
 
-                    if(p1Velocity != 0) {
-                        p1Velocity = 0;
-                        p1Velocity -= .01 * 100;
-                    } else {
-                        p1Velocity = 0;
-                        p1Velocity -= .01 * 2;
-                    }
-                    if(p2Velocity != 0) {
-                        p2Velocity = 0;
-                        p2Velocity -= .01 * 100;
-                    } else {
-                        p2Velocity = 0;
-                        p2Velocity -= .01 * 2;
-                    }
+                    changeVelocity(p1Velocity);
+                    changeVelocity(p2Velocity);
                 }
+            }
+        }
+
+
+        private static void changeVelocity(double playerVelocity) {
+            if(playerVelocity > 0) {
+                playerVelocity = 0;
+                playerVelocity -= .01 * 100;
+            } else {
+                playerVelocity = 0;
+                playerVelocity -= .01 * 2;
             }
         }
     }

@@ -19,42 +19,36 @@
     <select />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="almost done with brown house bouncing off" />
-=======
-    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="Collisions when stopped work but it never stops moving back" />
->>>>>>> fe224edca5916a7a0da05afc261b0c5c42c2fc9e
+    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="changed threads to work smoothly">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Racer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="718" column="46" lean-forward="true" selection-start-line="718" selection-start-column="46" selection-end-line="718" selection-end-column="46" />
-              <folding>
-                <element signature="e#19504#19505#0" expanded="true" />
-                <element signature="e#19539#19540#0" expanded="true" />
-                <element signature="e#19582#19583#0" expanded="true" />
-                <element signature="e#19620#19621#0" expanded="true" />
-                <element signature="e#20449#20450#0" expanded="true" />
-                <element signature="e#20484#20485#0" expanded="true" />
-                <element signature="e#20528#20529#0" expanded="true" />
-                <element signature="e#20566#20567#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="410">
+              <caret line="549" column="9" lean-forward="true" selection-start-line="549" selection-start-column="9" selection-end-line="549" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-=======
->>>>>>> fe224edca5916a7a0da05afc261b0c5c42c2fc9e
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -62,17 +56,51 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>clip2</find>
+      <find>clip</find>
+      <find>playerMover</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="92" />
-    <option name="y" value="25" />
-    <option name="width" value="1497" />
-    <option name="height" value="967" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/Racer.java" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1nlgBZrnu45D6PNOetLT5osWkxH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="2D Racer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2D Racer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2D Racer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2D Racer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -83,7 +111,18 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613260656143" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.Racer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -114,7 +153,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -135,8 +174,6 @@
       <workItem from="1613170708706" duration="7795000" />
       <workItem from="1613241785849" duration="12401000" />
       <workItem from="1613272832034" duration="8258000" />
-      <workItem from="1613354476027" duration="3147000" />
-      <workItem from="1613451507574" duration="3481000" />
     </task>
     <task id="LOCAL-00001" summary="changed threads to work smoothly">
       <created>1613275299539</created>
@@ -145,91 +182,46 @@
       <option name="project" value="LOCAL" />
       <updated>1613275299539</updated>
     </task>
-    <task id="LOCAL-00002" summary="workspace.xml fixed for my computer">
-      <created>1613343288981</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1613343288981</updated>
-    </task>
-    <task id="LOCAL-00003" summary="tried to implement brown house bouncing off">
-      <created>1613349087783</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1613349087783</updated>
-    </task>
-    <task id="LOCAL-00004" summary="almost done with brown house bouncing off">
-      <created>1613357360815</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1613357360815</updated>
-    </task>
-    <task id="LOCAL-00005" summary="fixed when the sound for crashing cars plays">
-      <created>1613487238471</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1613487238471</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Cars crash and bounce off but moves way too fast when it is at a stop">
-      <created>1613488217648</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1613488217648</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Collisions when stopped work but it never stops moving back">
-      <created>1613488944202</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1613488944202</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-<<<<<<< HEAD
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3569000" />
+    <option name="totallyTimeSpent" value="1922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="92" y="25" width="1497" height="967" extended-state="0" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24948454" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17457044" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32911393" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31530493" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.14729574" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32911393" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
-=======
->>>>>>> fe224edca5916a7a0da05afc261b0c5c42c2fc9e
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
@@ -238,7 +230,14 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -257,80 +256,25 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed threads to work smoothly" />
-    <MESSAGE value="workspace.xml fixed for my computer" />
-    <MESSAGE value="tried to implement brown house bouncing off" />
-    <MESSAGE value="almost done with brown house bouncing off" />
-    <MESSAGE value="fixed when the sound for crashing cars plays" />
-    <MESSAGE value="Cars crash and bounce off but moves way too fast when it is at a stop" />
-    <MESSAGE value="Collisions when stopped work but it never stops moving back" />
-    <option name="LAST_COMMIT_MESSAGE" value="Collisions when stopped work but it never stops moving back" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1613489027992">
-      <screen x="0" y="25" width="1792" height="1036" />
-    </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1034@0.25.1792.1034" timestamp="1613368177846" />
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1036@0.25.1792.1036" timestamp="1613489027992" />
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1037@0.25.1792.1037" timestamp="1613488179711" />
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1038@0.25.1792.1038" timestamp="1613487618867" />
-    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1613489027992">
-      <screen x="0" y="25" width="1792" height="1036" />
-    </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1034@0.25.1792.1034" timestamp="1613368177845" />
-    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1036@0.25.1792.1036" timestamp="1613489027992" />
-    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1037@0.25.1792.1037" timestamp="1613488179710" />
-    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1038@0.25.1792.1038" timestamp="1613487618866" />
-    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1613489027991">
-      <screen x="0" y="25" width="1792" height="1036" />
-    </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1034@0.25.1792.1034" timestamp="1613368177844" />
-    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1036@0.25.1792.1036" timestamp="1613489027991" />
-    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1037@0.25.1792.1037" timestamp="1613488179709" />
-    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1038@0.25.1792.1038" timestamp="1613487618866" />
-    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1613489027992">
-      <screen x="0" y="25" width="1792" height="1036" />
-    </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1034@0.25.1792.1034" timestamp="1613368177845" />
-    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1036@0.25.1792.1036" timestamp="1613489027992" />
-    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1037@0.25.1792.1037" timestamp="1613488179711" />
-    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1038@0.25.1792.1038" timestamp="1613487618866" />
-    <state x="496" y="280" key="Vcs.Push.Dialog.v2" timestamp="1613488946216">
-      <screen x="0" y="25" width="1792" height="1036" />
-    </state>
-    <state x="496" y="279" key="Vcs.Push.Dialog.v2/0.25.1792.1034@0.25.1792.1034" timestamp="1613357366148" />
-    <state x="496" y="280" key="Vcs.Push.Dialog.v2/0.25.1792.1036@0.25.1792.1036" timestamp="1613488946216" />
-    <state x="496" y="280" key="Vcs.Push.Dialog.v2/0.25.1792.1037@0.25.1792.1037" timestamp="1613488222257" />
-    <state x="496" y="280" key="Vcs.Push.Dialog.v2/0.25.1792.1038@0.25.1792.1038" timestamp="1613487240547" />
-    <state x="687" y="462" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613487295480">
-      <screen x="0" y="25" width="1792" height="1038" />
-    </state>
-    <state x="687" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1792.1034@0.25.1792.1034" timestamp="1613367909579" />
-<<<<<<< HEAD
+    <option name="LAST_COMMIT_MESSAGE" value="changed threads to work smoothly" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Racer.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="718" column="46" lean-forward="true" selection-start-line="718" selection-start-column="46" selection-end-line="718" selection-end-column="46" />
-          <folding>
-            <element signature="e#19504#19505#0" expanded="true" />
-            <element signature="e#19539#19540#0" expanded="true" />
-            <element signature="e#19582#19583#0" expanded="true" />
-            <element signature="e#19620#19621#0" expanded="true" />
-            <element signature="e#20449#20450#0" expanded="true" />
-            <element signature="e#20484#20485#0" expanded="true" />
-            <element signature="e#20528#20529#0" expanded="true" />
-            <element signature="e#20566#20567#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2385">
+          <caret line="286" column="10" selection-start-line="286" selection-start-column="10" selection-end-line="286" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-=======
-    <state x="687" y="462" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1792.1038@0.25.1792.1038" timestamp="1613487295480" />
->>>>>>> fe224edca5916a7a0da05afc261b0c5c42c2fc9e
+    <entry file="file://$PROJECT_DIR$/src/Racer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="549" column="9" lean-forward="true" selection-start-line="549" selection-start-column="9" selection-end-line="549" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
