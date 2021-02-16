@@ -426,6 +426,9 @@ public class Racer {
             return playerCheck.getX() < 205 && playerCheck.getX() > -9 && playerCheck.getY() > 190 && playerCheck.getY() < 420;
         }
 
+        public static boolean hitRedHouse(ImageObject playerCheck){
+            return playerCheck.getX() < 175 && playerCheck.getX() > -9 && playerCheck.getY() > 550 && playerCheck.getY() < 800;
+        }
 
           public static boolean hitEndOfMap(ImageObject playerCheck){
             return playerCheck.getX() > 1318 && playerCheck.getX() < 1 && playerCheck.getY() > 936 && playerCheck.getY() < 1;
@@ -465,22 +468,22 @@ public class Racer {
                 }
 
                 // Bouncing affect when player hits a building to avoid having player stuck on wall.
-                if (hitBlueTent(p1)) {
+                if (hitBlueTent(p1) || hitBrownHouse(p1) || hitRedHouse(p1)) {
                     p1Velocity = 0;
                     p1Velocity -= velocityStep * 100;
-                } else if (hitBlueTent(p2)) {
+                } else if (hitBlueTent(p2) || hitBrownHouse(p2) || hitRedHouse(p2)) {
                     p2Velocity = 0;
                     p2Velocity -= velocityStep * 100;
                 }
 
                 // Bouncing affect when player hits a building to avoid having player stuck on wall.
-                if (hitBrownHouse(p1)) {
-                    p1Velocity = 0;
-                    p1Velocity -= velocityStep * 100;
-                } else if (hitBrownHouse(p2)) {
-                    p2Velocity = 0;
-                    p2Velocity -= velocityStep * 100;
-                }
+//                if (hitBrownHouse(p1)) {
+//                    p1Velocity = 0;
+//                    p1Velocity -= velocityStep * 100;
+//                } else if (hitBrownHouse(p2)) {
+//                    p2Velocity = 0;
+//                    p2Velocity -= velocityStep * 100;
+//                }
 
                 //FIXME: This is not working...worked for the blue tent but not working for border for some reason...
                 if(hitEndOfMap(p1)){
