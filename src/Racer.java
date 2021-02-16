@@ -715,7 +715,7 @@ public class Racer {
     private static class CollisionChecker implements Runnable {
         public void run() {
             while (!endgame) {
-
+                //FIXME how do I get them to stop moving backwards??
                 if (collisionOccurs(p1, p2)) {
                     System.out.println("CRASH between p1 and p2!!!!");
                     clip2.setFramePosition(0);
@@ -735,8 +735,6 @@ public class Racer {
                         p2Velocity = 0;
                         p2Velocity -= .01 * 2;
                     }
-//                    p1Velocity -= .01;
-//                    p2Velocity -= .01;
                 }
             }
         }
