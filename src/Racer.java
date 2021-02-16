@@ -131,11 +131,11 @@ public class Racer {
         p1Width = 50;
 
         //initial coords for the players
-        p1OriginalX = (double) xOffset + ((double) winWidth / 2.0) - (p1Width / 2.0) + 400;
-        p1OriginalY = (double) yOffset + ((double) winHeight / 2.0) - (p1Height / 2.0) + 50;
+        p1OriginalX = 1080; //(double) xOffset + ((double) winWidth / 2.0) - (p1Width / 2.0) + 400;
+        p1OriginalY = 525; //(double) yOffset + ((double) winHeight / 2.0) - (p1Height / 2.0) + 50;
 
-        p2OriginalX = (double) xOffset + ((double) winWidth / 2.0) - (p1Width / 2.0) + 400;
-        p2OriginalY = (double) yOffset + ((double) winHeight / 2.0) - (p1Height / 2.0) + 100;
+        p2OriginalX = 1030; //(double) xOffset + ((double) winWidth / 2.0) - (p1Width / 2.0) + 400;
+        p2OriginalY = 525; //(double) yOffset + ((double) winHeight / 2.0) - (p1Height / 2.0) + 100;
 
         System.out.println("P1 x: " + p1OriginalX + ", P1 y: " + p1OriginalY);
         System.out.println("P2 x: " + p2OriginalX + ", P2 y: " + p2OriginalY);
@@ -145,15 +145,15 @@ public class Racer {
             //default images for the game
             background = ImageIO.read(new File("Images/Track3.png"));
             player = ImageIO.read(new File("Images/BlueCarLarge2.png"));
-            player2 = ImageIO.read(new File("Images/RedCarLarge2.png"));
+            player2 = ImageIO.read(new File("Images/RedTurn.png"));
             coverBackground = ImageIO.read(new File("Images/GraphicsCover.png"));
 
             //initializes all of the colors so that players can change the colors of their cars
             Blue = ImageIO.read(new File("Images/BlueCarLarge2.png"));
-            Red = ImageIO.read(new File("Images/RedCarLarge2.png"));
-            Orange = ImageIO.read(new File("Images/OrangeCarLarge2.png"));
-            Green = ImageIO.read(new File("Images/GreenCarLarge2.png"));
-            White = ImageIO.read(new File("Images/WhiteCarLarge2.png"));
+            Red = ImageIO.read(new File("Images/RedTurn.png"));
+            Orange = ImageIO.read(new File("Images/OrangeTurn.png"));
+            Green = ImageIO.read(new File("Images/GreenTurn.png"));
+            White = ImageIO.read(new File("Images/WhiteTurn.png"));
 
             //use this to create an array of barriers to act as collision for the cars
 //            for (int i = 0; i < 8; i++) {
