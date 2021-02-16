@@ -733,19 +733,19 @@ public class Racer {
      */
     private static Boolean isInside(double p1x, double p1y, double p2x1, double p2y1, double p2x2, double p2y2) {
         Boolean ret = false;
-        if (p1x > p2x1 && p1x < p2x2) {
+        if (p1x >= p2x1 && p1x <= p2x2) {
             if (p1y > p2y1 && p1y < p2y2) {
                 ret = true;
             }
-            if (p1y > p2y2 && p1y < p2y1) {
+            if (p1y >= p2y2 && p1y <= p2y1) {
                 ret = true;
             }
         }
-        if (p1x > p2x2 && p1x < p2x1) {
+        if (p1x >= p2x2 && p1x <= p2x1) {
             if (p1y > p2y1 && p1y < p2y2) {
                 ret = true;
             }
-            if (p1y > p2y2 && p1y < p2y1) {
+            if (p1y >= p2y2 && p1y <= p2y1) {
                 ret = true;
             }
         }
