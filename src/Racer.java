@@ -722,7 +722,11 @@ public class Racer {
                     clip2.start();
 
                     p1Velocity = 0;
+                    p1Velocity -= .01 * 100;
                     p2Velocity = 0;
+                    p2Velocity -= .01 * 100;
+//                    p1Velocity -= .01;
+//                    p2Velocity -= .01;
                 }
             }
         }

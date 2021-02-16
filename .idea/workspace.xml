@@ -19,8 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="almost done with brown house bouncing off">
+    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="fixed when the sound for crashing cars plays">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyPressed.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$KeyReleased.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +117,7 @@
       <workItem from="1613241785849" duration="12401000" />
       <workItem from="1613272832034" duration="8258000" />
       <workItem from="1613354476027" duration="3147000" />
-      <workItem from="1613451507574" duration="1317000" />
+      <workItem from="1613451507574" duration="2468000" />
     </task>
     <task id="LOCAL-00001" summary="changed threads to work smoothly">
       <created>1613275299539</created>
@@ -139,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613357360815</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed when the sound for crashing cars plays">
+      <created>1613487238471</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613487238471</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,37 +191,47 @@
     <MESSAGE value="workspace.xml fixed for my computer" />
     <MESSAGE value="tried to implement brown house bouncing off" />
     <MESSAGE value="almost done with brown house bouncing off" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost done with brown house bouncing off" />
+    <MESSAGE value="fixed when the sound for crashing cars plays" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed when the sound for crashing cars plays" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1613451679908">
-      <screen x="0" y="25" width="1792" height="1036" />
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1613488179711">
+      <screen x="0" y="25" width="1792" height="1037" />
     </state>
     <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1034@0.25.1792.1034" timestamp="1613368177846" />
     <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1036@0.25.1792.1036" timestamp="1613451679908" />
-    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1613451679907">
-      <screen x="0" y="25" width="1792" height="1036" />
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1037@0.25.1792.1037" timestamp="1613488179711" />
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1038@0.25.1792.1038" timestamp="1613487618867" />
+    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1613488179710">
+      <screen x="0" y="25" width="1792" height="1037" />
     </state>
     <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1034@0.25.1792.1034" timestamp="1613368177845" />
     <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1036@0.25.1792.1036" timestamp="1613451679907" />
-    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1613451679907">
-      <screen x="0" y="25" width="1792" height="1036" />
+    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1037@0.25.1792.1037" timestamp="1613488179710" />
+    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1038@0.25.1792.1038" timestamp="1613487618866" />
+    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1613488179709">
+      <screen x="0" y="25" width="1792" height="1037" />
     </state>
     <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1034@0.25.1792.1034" timestamp="1613368177844" />
     <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1036@0.25.1792.1036" timestamp="1613451679907" />
-    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1613451679908">
-      <screen x="0" y="25" width="1792" height="1036" />
+    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1037@0.25.1792.1037" timestamp="1613488179709" />
+    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1038@0.25.1792.1038" timestamp="1613487618866" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1613488179711">
+      <screen x="0" y="25" width="1792" height="1037" />
     </state>
     <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1034@0.25.1792.1034" timestamp="1613368177845" />
     <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1036@0.25.1792.1036" timestamp="1613451679908" />
-    <state x="496" y="279" key="Vcs.Push.Dialog.v2" timestamp="1613357366148">
-      <screen x="0" y="25" width="1792" height="1034" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1037@0.25.1792.1037" timestamp="1613488179711" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1038@0.25.1792.1038" timestamp="1613487618866" />
+    <state x="496" y="280" key="Vcs.Push.Dialog.v2" timestamp="1613487240547">
+      <screen x="0" y="25" width="1792" height="1038" />
     </state>
     <state x="496" y="279" key="Vcs.Push.Dialog.v2/0.25.1792.1034@0.25.1792.1034" timestamp="1613357366148" />
-    <state x="687" y="462" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613486688950">
+    <state x="496" y="280" key="Vcs.Push.Dialog.v2/0.25.1792.1038@0.25.1792.1038" timestamp="1613487240547" />
+    <state x="687" y="462" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613487295480">
       <screen x="0" y="25" width="1792" height="1038" />
     </state>
     <state x="687" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1792.1034@0.25.1792.1034" timestamp="1613367909579" />
-    <state x="687" y="462" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1792.1038@0.25.1792.1038" timestamp="1613486688950" />
+    <state x="687" y="462" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1792.1038@0.25.1792.1038" timestamp="1613487295480" />
   </component>
 </project>
