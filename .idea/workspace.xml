@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="changed threads to work smoothly" />
+    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="changed threads to work smoothly">
+      <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Racer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="364" column="33" lean-forward="true" selection-start-line="364" selection-start-column="33" selection-end-line="364" selection-end-column="33" />
+            <state relative-caret-position="249">
+              <caret line="499" lean-forward="true" selection-start-line="499" selection-end-line="499" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +58,10 @@
       <find>clip2</find>
       <find>clip</find>
       <find>playerMover</find>
-      <find>drawClock</find>
       <find>p1current</find>
+      <find>p1CurrentLap</find>
+      <find>drawClock</find>
+      <find>start</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -84,6 +88,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -100,8 +106,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -178,6 +182,7 @@
       <workItem from="1613241785849" duration="12401000" />
       <workItem from="1613272832034" duration="8258000" />
       <workItem from="1613511931585" duration="2417000" />
+      <workItem from="1613533273536" duration="1110000" />
     </task>
     <task id="LOCAL-00001" summary="changed threads to work smoothly">
       <created>1613275299539</created>
@@ -190,12 +195,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4339000" />
+    <option name="totallyTimeSpent" value="5449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="92" y="25" width="1497" height="967" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1766323" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17869416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -204,7 +210,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2566168" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.10586882" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -275,8 +281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Racer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="364" column="33" lean-forward="true" selection-start-line="364" selection-start-column="33" selection-end-line="364" selection-end-column="33" />
+        <state relative-caret-position="249">
+          <caret line="499" lean-forward="true" selection-start-line="499" selection-end-line="499" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

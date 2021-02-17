@@ -63,6 +63,8 @@ public class Racer {
     //used in the drawClock method to determine how many seconds
     //have elapsed since the beginning of the game
     private static long start = System.currentTimeMillis();
+    private static long startPlayer1 = System.currentTimeMillis();
+    private static long startPlayer2 = System.currentTimeMillis();
 
     private static JFrame appFrame;
     private static final int IFW = JComponent.WHEN_IN_FOCUSED_WINDOW;
@@ -322,16 +324,7 @@ public class Racer {
     private static class CarListener1 implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             int n = carList.getSelectedIndex();
-            if (n == 0)
-                player = Red;
-            else if (n == 1)
-                player = Blue;
-            else if (n == 2)
-                player = Orange;
-            else if (n == 3)
-                player = Green;
-            else
-                player = White;
+            carPick(player, n);
         }
     }
 
@@ -341,18 +334,23 @@ public class Racer {
     private static class CarListener2 implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             int n = carList2.getSelectedIndex();
-            if (n == 0)
-                player2 = Red;
-            else if (n == 1)
-                player2 = Blue;
-            else if (n == 2)
-                player2 = Orange;
-            else if (n == 3)
-                player2 = Green;
-            else
-                player2 = White;
+            carPick(player2, n);
         }
     }
+
+    public static void carPick(BufferedImage playerCar, int n) {
+        if (n == 0)
+            playerCar = Red;
+        else if (n == 1)
+            playerCar = Blue;
+        else if (n == 2)
+            playerCar = Orange;
+        else if (n == 3)
+            playerCar = Green;
+        else
+            playerCar = White;
+    }
+
 
     private static class StartGame implements ActionListener {
         public void actionPerformed(ActionEvent e) {
@@ -497,8 +495,18 @@ public class Racer {
 
             while (!endgame) {
 
-                if (passedLap(p1)) p1CurrentLap += 1;
-                if (passedLap(p2)) p2CurrentLap += 1;
+                long p1Timer = System.currentTimeMillis() - startPlayer1;
+                long p2Timer = System.currentTimeMillis() - startPlayer2;
+
+                if (passedLap(p1) && p1Timer > 2000) {
+                    p1CurrentLap += 1;
+                    startPlayer1 = System.currentTimeMillis();
+                }
+
+                if (passedLap(p2) && p2Timer > 2000) {
+                    p2CurrentLap += 1;
+                    startPlayer2 = System.currentTimeMillis();
+                }
 
                 try {
                     Thread.sleep(10);
