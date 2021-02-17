@@ -62,9 +62,14 @@ public class Racer {
 
     //used in the drawClock method to determine how many seconds
     //have elapsed since the beginning of the game
+    //used in lap counting as well to make sure players cannot do laps too quickly
     private static long start = System.currentTimeMillis();
     private static long startPlayer1 = System.currentTimeMillis();
     private static long startPlayer2 = System.currentTimeMillis();
+
+    //best time tracker for each player
+    private static long bestTimePlayer1 = Integer.MAX_VALUE;
+    private static long bestTimePlayer2 = Integer.MAX_VALUE;
 
     private static JFrame appFrame;
     private static final int IFW = JComponent.WHEN_IN_FOCUSED_WINDOW;
@@ -281,11 +286,19 @@ public class Racer {
 
                 if (p1CurrentLap >= maxLaps + 1) {
                     drawWinner("Player 1");
+                    g2d.setFont(new Font("TimesRoman", Font.BOLD, 40));
+                    g2d.setColor(Color.red);
+                    g2d.drawString(  "Player 1 Best Lap: " + bestTimePlayer1 / 1000f + " seconds", 450, 550);
+                    g2d.drawString(  "Player 2 Best Lap: " + bestTimePlayer2 / 1000f + " seconds", 450, 650);
                     endgame = true;
                     clip.close();
                     clip2.close();
                 } else if (p2CurrentLap >= maxLaps + 1) {
                     drawWinner("Player 2");
+                    g2d.setFont(new Font("TimesRoman", Font.BOLD, 40));
+                    g2d.setColor(Color.red);
+                    g2d.drawString(  "Player 1 Best Lap: " + bestTimePlayer1 / 1000f + " seconds", 450, 550);
+                    g2d.drawString(  "Player 2 Best Lap: " + bestTimePlayer2 / 1000f + " seconds", 450, 650);
                     endgame = true;
                     clip.close();
                     clip2.close();
@@ -434,6 +447,10 @@ public class Racer {
             g.setColor(Color.red);
             g2d.setFont(new Font("TimesRoman", Font.BOLD, 60));
             g2d.drawString(winningPlayer + " won!", 650, 450);
+
+            g2d.setFont(new Font("TimesRoman", Font.BOLD, 40));
+            g2d.drawString(  "Player 1 Best Lap: " + bestTimePlayer1, 650, 550);
+            g2d.drawString(  "Player 2 Best Lap: " + bestTimePlayer2, 650, 650);
         }
     }
 
@@ -500,12 +517,16 @@ public class Racer {
 
                 if (passedLap(p1) && p1Timer > 2000) {
                     p1CurrentLap += 1;
+                    long prevLap = System.currentTimeMillis() - startPlayer1;
                     startPlayer1 = System.currentTimeMillis();
+                    if (prevLap < bestTimePlayer1) bestTimePlayer1 = prevLap;
                 }
 
                 if (passedLap(p2) && p2Timer > 2000) {
                     p2CurrentLap += 1;
+                    long prevLap = System.currentTimeMillis() - startPlayer2;
                     startPlayer2 = System.currentTimeMillis();
+                    if (prevLap < bestTimePlayer2) bestTimePlayer2 = prevLap;
                 }
 
                 try {
