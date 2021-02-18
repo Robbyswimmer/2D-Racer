@@ -337,7 +337,7 @@ public class Racer {
     private static class CarListener1 implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             int n = carList.getSelectedIndex();
-            carPick(player, n);
+            player = carPick(player, n);
         }
     }
 
@@ -347,11 +347,11 @@ public class Racer {
     private static class CarListener2 implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             int n = carList2.getSelectedIndex();
-            carPick(player2, n);
+            player2 = carPick(player2, n);
         }
     }
 
-    public static void carPick(BufferedImage playerCar, int n) {
+    public static BufferedImage carPick(BufferedImage playerCar, int n) {
         if (n == 0)
             playerCar = Red;
         else if (n == 1)
@@ -362,6 +362,7 @@ public class Racer {
             playerCar = Green;
         else
             playerCar = White;
+        return playerCar;
     }
 
 
@@ -567,9 +568,14 @@ public class Racer {
                 if (hitBlueTent(p1) || hitBrownHouse(p1) || hitRedHouse(p1) || hitEndOfMap(p1) || hitPlayer(p1, p2)) {
                     p1Velocity = 0;
                     p1Velocity -= velocityStep * 100;
-                } else if (hitBlueTent(p2) || hitBrownHouse(p2) || hitRedHouse(p2) || hitEndOfMap(p2) || hitPlayer(p1, p2)) {
+                } else if (hitBlueTent(p2) || hitBrownHouse(p2) || hitRedHouse(p2) || hitEndOfMap(p2) || hitPlayer(p2, p1)) {
                     p2Velocity = 0;
                     p2Velocity -= velocityStep * 100;
+                }
+
+                if (hitPlayer(p1, p2) || hitPlayer(p2, p1)) {
+                    clip2.setFramePosition(0);
+                    clip2.start();
                 }
 
                 //handle air braking – slowing naturally because no acceleration
@@ -602,7 +608,7 @@ public class Racer {
                 }
 
                 if (aPressed) {
-                    if (p1Velocity < 0)
+                    if (p2Velocity < 0)
                         p2.rotate(-rotateStep);
                     else
                         p2.rotate(rotateStep);
@@ -617,7 +623,7 @@ public class Racer {
                 }
 
                 if (dPressed) {
-                    if (p1Velocity < 0)
+                    if (p2Velocity < 0)
                         p2.rotate(rotateStep);
                     else
                         p2.rotate(-rotateStep);
