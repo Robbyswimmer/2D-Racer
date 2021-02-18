@@ -19,15 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="changed threads to work smoothly">
+    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="car collisions kind of bounce off but don't work perfectly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$CollisionChecker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$ImageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +102,12 @@
       <workItem from="1613272832034" duration="8258000" />
       <workItem from="1613511931585" duration="2417000" />
       <workItem from="1613533273536" duration="2353000" />
-      <workItem from="1613619182159" duration="7041000" />
+      <workItem from="1613619182159" duration="7409000" />
+      <workItem from="1613630062223" duration="1267000" />
+      <workItem from="1613632863016" duration="184000" />
+      <workItem from="1613667986702" duration="14000" />
+      <workItem from="1613668361211" duration="15000" />
+      <workItem from="1613668401909" duration="35000" />
     </task>
     <task id="LOCAL-00001" summary="changed threads to work smoothly">
       <created>1613275299539</created>
@@ -118,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613275299539</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="car collisions kind of bounce off but don't work perfectly">
+      <created>1613629360094</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613629360094</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,24 +157,33 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed threads to work smoothly" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed threads to work smoothly" />
+    <MESSAGE value="car collisions kind of bounce off but don't work perfectly" />
+    <option name="LAST_COMMIT_MESSAGE" value="car collisions kind of bounce off but don't work perfectly" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1613628921446">
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1613633047395">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1034@0.25.1792.1034" timestamp="1613628921446" />
-    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1613628921445">
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1034@0.25.1792.1034" timestamp="1613633047395" />
+    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1613633047395">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1034@0.25.1792.1034" timestamp="1613628921445" />
-    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1613628921445">
+    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1034@0.25.1792.1034" timestamp="1613633047395" />
+    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1613633047394">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1034@0.25.1792.1034" timestamp="1613628921445" />
-    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1613628921446">
+    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1034@0.25.1792.1034" timestamp="1613633047394" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1613633047395">
       <screen x="0" y="25" width="1792" height="1034" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1034@0.25.1792.1034" timestamp="1613628921446" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1034@0.25.1792.1034" timestamp="1613633047395" />
+    <state x="563" y="361" key="Vcs.Push.Dialog.v2" timestamp="1613629366876">
+      <screen x="0" y="25" width="1792" height="1034" />
+    </state>
+    <state x="563" y="361" key="Vcs.Push.Dialog.v2/0.25.1792.1034@0.25.1792.1034" timestamp="1613629366876" />
+    <state x="687" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613630070766">
+      <screen x="0" y="25" width="1792" height="1034" />
+    </state>
+    <state x="687" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1792.1034@0.25.1792.1034" timestamp="1613630070766" />
   </component>
 </project>

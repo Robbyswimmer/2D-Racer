@@ -151,12 +151,12 @@ public class Racer {
 
             //default images for the game
             background = ImageIO.read(new File("Images/Track3.png"));
-            player = ImageIO.read(new File("Images/BlueCarLarge2.png"));
+            player = ImageIO.read(new File("Images/BlueCarLarge3.png"));
             player2 = ImageIO.read(new File("Images/RedTurn.png"));
             coverBackground = ImageIO.read(new File("Images/GraphicsCover.png"));
 
             //initializes all of the colors so that players can change the colors of their cars
-            Blue = ImageIO.read(new File("Images/BlueCarLarge2.png"));
+            Blue = ImageIO.read(new File("Images/BlueCarLarge3.png"));
             Red = ImageIO.read(new File("Images/RedTurn.png"));
             Orange = ImageIO.read(new File("Images/OrangeTurn.png"));
             Green = ImageIO.read(new File("Images/GreenTurn.png"));
