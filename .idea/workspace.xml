@@ -19,12 +19,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="changed threads to work smoothly" />
+=======
+    <list default="true" id="b6bc35f7-45a8-4a7f-882f-48cf58f6f220" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$Animate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$PlayerMover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer$StartGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2D Racer/Racer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Racer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Racer.java" afterDir="false" />
+    </list>
+>>>>>>> 015afeb57147a83930f4d9c27b02ea61cf35a2d9
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
@@ -38,6 +50,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> 015afeb57147a83930f4d9c27b02ea61cf35a2d9
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -45,14 +59,10 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>playerMover</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -94,6 +104,10 @@
       </pane>
     </panes>
   </component>
+=======
+  <component name="ProjectId" id="1nlgBZrnu45D6PNOetLT5osWkxH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> 015afeb57147a83930f4d9c27b02ea61cf35a2d9
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -102,20 +116,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613670869019" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612320841536" />
+>>>>>>> 015afeb57147a83930f4d9c27b02ea61cf35a2d9
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Images" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Racer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -146,7 +157,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -163,21 +174,10 @@
       <workItem from="1611969960133" duration="563000" />
       <workItem from="1612231718468" duration="1094000" />
       <workItem from="1612889274506" duration="313000" />
-      <workItem from="1613101924058" duration="3605000" />
-      <workItem from="1613170708706" duration="7795000" />
-      <workItem from="1613241785849" duration="12401000" />
-      <workItem from="1613272832034" duration="8258000" />
     </task>
-    <task id="LOCAL-00001" summary="changed threads to work smoothly">
-      <created>1613275299539</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1613275299539</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="2005000" />
   </component>
@@ -215,6 +215,8 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+=======
+>>>>>>> 015afeb57147a83930f4d9c27b02ea61cf35a2d9
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
@@ -223,14 +225,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -249,6 +244,7 @@
         </entry>
       </map>
     </option>
+<<<<<<< HEAD
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed threads to work smoothly" />
@@ -269,5 +265,30 @@
         </state>
       </provider>
     </entry>
+=======
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1613676289261">
+      <screen x="0" y="25" width="1792" height="1034" />
+    </state>
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1034@0.25.1792.1034" timestamp="1613673629399" />
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom/1792.25.1920.1055/0.25.1792.1034@0.25.1792.1034" timestamp="1613676289261" />
+    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1613676289261">
+      <screen x="0" y="25" width="1792" height="1034" />
+    </state>
+    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1034@0.25.1792.1034" timestamp="1613673629398" />
+    <state width="1750" height="280" key="GridCell.Tab.0.center/1792.25.1920.1055/0.25.1792.1034@0.25.1792.1034" timestamp="1613676289261" />
+    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1613676289260">
+      <screen x="0" y="25" width="1792" height="1034" />
+    </state>
+    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1034@0.25.1792.1034" timestamp="1613673629398" />
+    <state width="1750" height="280" key="GridCell.Tab.0.left/1792.25.1920.1055/0.25.1792.1034@0.25.1792.1034" timestamp="1613676289260" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1613676289261">
+      <screen x="0" y="25" width="1792" height="1034" />
+    </state>
+    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1034@0.25.1792.1034" timestamp="1613673629399" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right/1792.25.1920.1055/0.25.1792.1034@0.25.1792.1034" timestamp="1613676289261" />
+>>>>>>> 015afeb57147a83930f4d9c27b02ea61cf35a2d9
   </component>
 </project>

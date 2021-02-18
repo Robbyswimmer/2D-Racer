@@ -288,8 +288,8 @@ public class Racer {
                     drawWinner("Player 1");
                     g2d.setFont(new Font("TimesRoman", Font.BOLD, 40));
                     g2d.setColor(Color.red);
-                    g2d.drawString(  "Player 1 Best Lap: " + bestTimePlayer1 / 1000f + " seconds", 450, 550);
-                    g2d.drawString(  "Player 2 Best Lap: " + bestTimePlayer2 / 1000f + " seconds", 450, 650);
+                    g2d.drawString("Player 1 Best Lap: " + bestTimePlayer1 / 1000f + " seconds", 450, 550);
+                    g2d.drawString("Player 2 Best Lap: " + bestTimePlayer2 / 1000f + " seconds", 450, 650);
                     endgame = true;
                     clip.close();
                     clip2.close();
@@ -297,8 +297,8 @@ public class Racer {
                     drawWinner("Player 2");
                     g2d.setFont(new Font("TimesRoman", Font.BOLD, 40));
                     g2d.setColor(Color.red);
-                    g2d.drawString(  "Player 1 Best Lap: " + bestTimePlayer1 / 1000f + " seconds", 450, 550);
-                    g2d.drawString(  "Player 2 Best Lap: " + bestTimePlayer2 / 1000f + " seconds", 450, 650);
+                    g2d.drawString("Player 1 Best Lap: " + bestTimePlayer1 / 1000f + " seconds", 450, 550);
+                    g2d.drawString("Player 2 Best Lap: " + bestTimePlayer2 / 1000f + " seconds", 450, 650);
                     endgame = true;
                     clip.close();
                     clip2.close();
@@ -413,11 +413,11 @@ public class Racer {
             endgame = false;
             Thread t1 = new Thread(new Animate());
             Thread t2 = new Thread(new PlayerMover());
-            Thread t3 = new Thread(new CollisionChecker());
+            //Thread t3 = new Thread(new CollisionChecker());
             Thread t4 = new Thread(new WinChecker());
             t1.start();
             t2.start();
-            t3.start();
+            //t3.start();
         }
     }
 
@@ -449,8 +449,8 @@ public class Racer {
             g2d.drawString(winningPlayer + " won!", 650, 450);
 
             g2d.setFont(new Font("TimesRoman", Font.BOLD, 40));
-            g2d.drawString(  "Player 1 Best Lap: " + bestTimePlayer1, 650, 550);
-            g2d.drawString(  "Player 2 Best Lap: " + bestTimePlayer2, 650, 650);
+            g2d.drawString("Player 1 Best Lap: " + bestTimePlayer1, 650, 550);
+            g2d.drawString("Player 2 Best Lap: " + bestTimePlayer2, 650, 650);
         }
     }
 
@@ -466,7 +466,7 @@ public class Racer {
         }
 
         private void changeVelocity(double playerVelocity) {
-            if(playerVelocity > 0) {
+            if (playerVelocity > 0) {
                 velocityStep -= 0.01 * 1;
             } else {
                 velocityStep += 0.01 * 1;
@@ -496,8 +496,13 @@ public class Racer {
             return playerCheck.getX() < 175 && playerCheck.getX() > -9 && playerCheck.getY() > 550 && playerCheck.getY() < 800;
         }
 
-          public static boolean hitEndOfMap(ImageObject playerCheck) {
+        public static boolean hitEndOfMap(ImageObject playerCheck) {
             return playerCheck.getX() >= 1310 || playerCheck.getX() <= 10 || playerCheck.getY() >= 920 || playerCheck.getY() <= 15;
+        }
+
+        public static boolean hitPlayer(ImageObject p1, ImageObject p2) {
+            return (((p1.getX()) > p2.getX()) && ((p1.getX() - 25) < p2.getX()) &&
+                    ((p1.getY()) < p2.getY()) && ((p2.getY() - 25) < p1.getY()));
         }
 
         public static boolean passedLap(ImageObject playerCheck) {
@@ -559,10 +564,10 @@ public class Racer {
                 }
 
                 // Bouncing affect when player hits a building to avoid having player stuck on wall.
-                if (hitBlueTent(p1) || hitBrownHouse(p1) || hitRedHouse(p1) || hitEndOfMap(p1)) {
+                if (hitBlueTent(p1) || hitBrownHouse(p1) || hitRedHouse(p1) || hitEndOfMap(p1) || hitPlayer(p1, p2)) {
                     p1Velocity = 0;
                     p1Velocity -= velocityStep * 100;
-                } else if (hitBlueTent(p2) || hitBrownHouse(p2) || hitRedHouse(p2) || hitEndOfMap(p2)) {
+                } else if (hitBlueTent(p2) || hitBrownHouse(p2) || hitRedHouse(p2) || hitEndOfMap(p2) || hitPlayer(p1, p2)) {
                     p2Velocity = 0;
                     p2Velocity -= velocityStep * 100;
                 }
@@ -597,7 +602,7 @@ public class Racer {
                 }
 
                 if (aPressed) {
-                    if (p2Velocity < 0)
+                    if (p1Velocity < 0)
                         p2.rotate(-rotateStep);
                     else
                         p2.rotate(rotateStep);
@@ -612,7 +617,7 @@ public class Racer {
                 }
 
                 if (dPressed) {
-                    if (p2Velocity < 0)
+                    if (p1Velocity < 0)
                         p2.rotate(rotateStep);
                     else
                         p2.rotate(-rotateStep);
@@ -827,8 +832,8 @@ public class Racer {
 
 
         private static double changeVelocity(double playerVelocity) {
-                playerVelocity -=  playerVelocity * 2;
-                return playerVelocity;
+            playerVelocity -= playerVelocity * 2;
+            return playerVelocity;
         }
     }
 
