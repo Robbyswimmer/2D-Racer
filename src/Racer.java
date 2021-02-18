@@ -597,7 +597,7 @@ public class Racer {
                 }
 
                 if (aPressed) {
-                    if (p1Velocity < 0)
+                    if (p2Velocity < 0)
                         p2.rotate(-rotateStep);
                     else
                         p2.rotate(rotateStep);
@@ -612,7 +612,7 @@ public class Racer {
                 }
 
                 if (dPressed) {
-                    if (p1Velocity < 0)
+                    if (p2Velocity < 0)
                         p2.rotate(rotateStep);
                     else
                         p2.rotate(-rotateStep);
