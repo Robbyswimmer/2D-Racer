@@ -467,9 +467,9 @@ public class Racer {
 
         private void changeVelocity(double playerVelocity) {
             if(playerVelocity > 0) {
-                velocityStep -= 1;
+                velocityStep -= 0.01 * 1;
             } else {
-                velocityStep += 1;
+                velocityStep += 0.01 * 1;
             }
         }
 
@@ -818,22 +818,17 @@ public class Racer {
                     System.out.println("CRASH between p1 and p2!!!!");
                     clip2.setFramePosition(0);
                     clip2.start();
-
-                    changeVelocity(p1Velocity);
-                    changeVelocity(p2Velocity);
+                    //Velocity(p1Velocity);
+                    p1Velocity = changeVelocity(p1Velocity);
+                    p2Velocity = changeVelocity(p2Velocity);
                 }
             }
         }
 
 
-        private static void changeVelocity(double playerVelocity) {
-            if(playerVelocity > 0) {
-                playerVelocity = 0;
-                playerVelocity -= .01 * 100;
-            } else {
-                playerVelocity = 0;
-                playerVelocity -= .01 * 2;
-            }
+        private static double changeVelocity(double playerVelocity) {
+                playerVelocity -=  playerVelocity * 2;
+                return playerVelocity;
         }
     }
 
